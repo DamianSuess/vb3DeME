@@ -1,0 +1,33 @@
+﻿---
+# References:
+# - https://clang.llvm.org/docs/ClangFormatStyleOptions.html
+# - Terminal - https://github.com/microsoft/terminal/blob/main/.clang-format
+# Online Generator:
+# - https://zed0.co.uk/clang-format-configurator/
+
+BasedOnStyle: Microsoft
+AlignAfterOpenBracket: Align
+AlignEscapedNewlines: DontAlign
+AlignOperands: 'true'
+AlignTrailingComments: 'true'
+BreakBeforeBraces: Allman
+ColumnLimit: '120'
+ContinuationIndentWidth: '2'
+IncludeBlocks: Merge
+IndentCaseLabels: 'true'
+IndentWidth: '2'
+InsertNewlineAtEOF: true
+MaxEmptyLinesToKeep: '1'
+NamespaceIndentation: All
+SortIncludes: 'true'
+SortUsingDeclarations: 'true'
+SpaceAfterCStyleCast: 'false'
+SpaceAfterLogicalNot: 'false'
+SpaceInEmptyParentheses: 'false'
+SpacesInAngles: 'false'
+SpacesInContainerLiterals: 'false'
+SpacesInParentheses: 'false'
+SpacesInSquareBrackets: 'false'
+TabWidth: '2'
+UseTab: Never
+...
