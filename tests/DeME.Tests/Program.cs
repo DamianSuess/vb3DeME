@@ -26,6 +26,7 @@ internal static class Program
       ("Reject broken control framing", RejectControl),
       ("Decode control array index and container nesting", DecodeArray),
       ("Follow descriptor and relocation chains and bind Click", ReadProcedures),
+      ("Recover modules and procedures across descriptor segments", SegmentedDescriptors),
       ("Reject relocation and descriptor cycles", RejectCycles),
       ("Decode typed literals, expressions and assignments", DecompileExpressions),
       ("Report unsupported opcodes without silent loss", UnsupportedOpcode),
@@ -190,6 +191,46 @@ internal static class Program
     Assert(source.Contains("Sub Command1_Click", StringComparison.Ordinal));
     Assert(source.Contains("l0040 = 42", StringComparison.Ordinal));
   }
+
+  private static void SegmentedDescriptors() => WithDirectory((_, input, output) =>
+  {
+    byte[] bytes = Fixture.Executable();
+    int codeLength = System.Buffers.Binary.BinaryPrimitives.ReadUInt16LittleEndian(bytes.AsSpan(218, 2));
+    bytes.AsSpan(2048, codeLength).ToArray().CopyTo(bytes, 2560);
+    Array.Clear(bytes, 2048, 512);
+    Fixture.Word(bytes, 128 + 0x1c, 5);
+    Fixture.Word(bytes, 218, 256);
+    Fixture.Word(bytes, 220, 0x100);
+    Fixture.Word(bytes, 224, 160);
+    Fixture.Word(bytes, 226, (ushort)codeLength);
+    Fixture.Word(bytes, 1024 + 64 + 26, 0);
+    Fixture.Word(bytes, 1024 + 64 + 30, 0x42);
+    Fixture.Word(bytes, 2048 + 64 + 26, 2);
+    Fixture.Word(bytes, 2048 + 64 + 30, 0xffff);
+    Fixture.Word(bytes, 3072 + 19 + 9, 0x42);
+    Fixture.Word(bytes, 3328 + 0x6a, 0x42);
+    Fixture.Word(bytes, 1024 + 128 + 20, 0x42);
+    Fixture.Word(bytes, 1024 + 128 + 26, 0x82);
+    bytes.AsSpan(1024 + 128, 48).ToArray().CopyTo(bytes, 2048 + 128);
+    Fixture.Word(bytes, 2048 + 128 + 4, 0x124);
+    Fixture.Word(bytes, 2048 + 128 + 26, 0xffff);
+    Fixture.Word(bytes, 1542, 5);
+    Fixture.Word(bytes, 2304, 1);
+    bytes[2306] = 2;
+    Fixture.Word(bytes, 2308, 128 + 38);
+    Fixture.Word(bytes, 2310, 5);
+    File.WriteAllBytes(input, bytes);
+    DecompileReport report = Decompiler.Decompile(input, output);
+    Assert((report.Modules == 1) && (report.Procedures == 2));
+    Assert(report.Warnings.Count == 0, string.Join("; ", report.Warnings));
+    string form = File.ReadAllText(Path.Combine(output, "MAIN.FRM"));
+    Assert(form.Contains("Sub Command1_Click", StringComparison.Ordinal));
+    Assert(form.Contains("Sub sub0124", StringComparison.Ordinal));
+    Assert(form.Split("l0040 = 42", StringSplitOptions.None).Length == 3);
+
+    Fixture.Word(bytes, 1024 + 64 + 30, 0x46);
+    Throws<InvalidDataException>(() => Code(bytes));
+  });
 
   private static void RejectCycles()
   {

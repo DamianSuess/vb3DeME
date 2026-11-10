@@ -20,8 +20,15 @@ public sealed class CodeProject
     data.Span(0, 0x60);
     NeSegment segment = executable.Segments.FirstOrDefault(item => item.HasRelocations && (item.Index != executable.EntrySegment))
       ?? executable.Segments.ElementAtOrDefault(2) ?? throw new InvalidDataException("VB3 descriptor segment is missing.");
-    var descriptors = new BinaryData(executable.ReadSegment(segment));
-    Dictionary<int, int> targets = ReadRelocations(executable, segment, descriptors);
+    NeSegment[] descriptorSegments = executable.Segments.Skip(segment.Index - 1).TakeWhile(item => item.HasRelocations).ToArray();
+    BinaryData[] descriptorData = descriptorSegments.Select(item => new BinaryData(executable.ReadSegment(item))).ToArray();
+    var targets = new Dictionary<int, int>();
+    for (int bank = 0; bank < descriptorSegments.Length; bank++)
+    {
+      foreach (var relocation in ReadRelocations(executable, descriptorSegments[bank], descriptorData[bank]))
+        targets.Add(relocation.Key | (bank * 2), relocation.Value);
+    }
+
     ushort modulePointer = data.Word(0x5a);
     ushort pointer = modulePointer;
     var visited = new HashSet<ushort>();
@@ -32,6 +39,7 @@ public sealed class CodeProject
         throw new InvalidDataException("Cyclic VB3 module descriptor chain.");
 
       int offset = DescriptorOffset(pointer);
+      BinaryData descriptors = DescriptorData(pointer, descriptorData);
       descriptors.Span(offset, 64);
       ushort next = descriptors.Word(offset + 30);
       if ((pointer != modulePointer) || (descriptors.Word(offset + 26) != 0))
@@ -52,6 +60,7 @@ public sealed class CodeProject
         throw new InvalidDataException("Cyclic VB3 procedure descriptor chain.");
 
       int offset = DescriptorOffset(pointer);
+      BinaryData descriptors = DescriptorData(pointer, descriptorData);
       descriptors.Span(offset, 48);
       ushort flags = descriptors.Word(offset + 12);
       bool local = (descriptors.Word(offset + 22) & 1) != 0;
@@ -64,7 +73,7 @@ public sealed class CodeProject
         TypeFlags = flags,
         ScopeFlags = descriptors.Word(offset + 14),
         IsLocal = local,
-        CodeSegment = targets.GetValueOrDefault(offset),
+        CodeSegment = targets.GetValueOrDefault(pointer),
         CodeOffset = descriptors.Word(offset + 24),
       };
       if (local)
@@ -93,7 +102,6 @@ public sealed class CodeProject
 
       result.Procedures.Add(procedure);
       result.ProcedurePointers[procedure.Pointer] = procedure;
-      result.ProcedurePointers[procedure.DescriptorOffset] = procedure;
       VbModule? module = result.Modules.FirstOrDefault(item => item.Id == procedure.ModuleId);
       if (module is null)
       {
@@ -113,6 +121,16 @@ public sealed class CodeProject
   }
 
   private static int DescriptorOffset(ushort pointer) => (((pointer >> 3) | ((pointer & 7) << 13)) & 0x1fff) * 8;
+
+  private static BinaryData DescriptorData(ushort pointer, BinaryData[] banks)
+  {
+    // Heap pointers retain the byte offset in bits 3..15 and the segment tag in bits 1..2.
+    int bank = (pointer & 7) >> 1;
+    if (((pointer & 1) != 0) || (bank >= banks.Length))
+      throw new InvalidDataException($"Invalid descriptor segment tag in pointer 0x{pointer:X4}.");
+
+    return banks[bank];
+  }
 
   private static int DeclarationBase(BinaryData data)
   {

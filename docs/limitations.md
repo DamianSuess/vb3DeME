@@ -8,7 +8,7 @@ DeME is a native C# implementation, not a complete feature-for-feature port of v
 - VB3 project titles, startup metadata, form directories, preserved names, and detection of stripped names.
 - Built-in control properties from the runtime's property models, nested containers, control arrays, event bindings, font blocks, and FRX pictures.
 - Custom VBX control properties/events recovered by inspecting CDK models in companion libraries. Libraries are read as data; they are never loaded or executed.
-- Procedure/module descriptor chains, 16-bit descriptor rotation, NE relocation chains, and procedure-to-form mapping.
+- Procedure/module descriptor chains spanning multiple descriptor segments, tagged heap pointers, NE relocation chains, and procedure-to-form mapping.
 - Typed numeric/string literals, expression stacks, scalar/array references, assignments, properties, methods, procedure calls, event signatures, common runtime functions, and dialog calls.
 - Common If/Else, For/Next, While/Wend, Do/Loop, Select Case, exits, labels, GoTo/GoSub, and error-handling statements.
 - Basic Open/Close/Get/Put/Input/Print operations. Graphics statements and some file access variants remain incomplete.
@@ -30,4 +30,6 @@ DeME is a native C# implementation, not a complete feature-for-feature port of v
 
 The automated tests build synthetic NE/VB3 fixtures in C#, including a custom VBX model and a procedure bound to a button Click event. They cover form/source/asset export, text encodings, control flow, globals, corrupt lengths, descriptor/relocation cycles, output path validation, collision refusal, and cancellation.
 
-The upstream repository does not distribute its FF, BasCode, or Empire executable fixtures. No real application executable has been supplied in this workspace, so those programs and full VB3 IDE round trips have not been validated. Add real-program regression fixtures only when you have permission to distribute them.
+Local validation also covers inspection of `FATEIMM.EXE` and decompilation of `FATEZERO.EXE`. The latter recovers 93 modules and 1,429 procedures, including source appended to `FRM1.FRM`, and exercises a descriptor heap spanning two segments. These executables are not redistributed with the project. Some forms and procedure constructs still produce recovery warnings.
+
+The upstream repository does not distribute its FF, BasCode, or Empire executable fixtures. Those programs and full VB3 IDE round trips have not been validated. Add real-program regression fixtures only when you have permission to distribute them.
