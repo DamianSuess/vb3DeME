@@ -1,0 +1,4918 @@
+{
+  "Check": {
+    "Name": "Check",
+    "Properties": [
+      {
+        "Name": "Caption",
+        "Flags": 2160739329,
+        "Standard": 12
+      },
+      {
+        "Name": "Name",
+        "Flags": 2248201278,
+        "Standard": 0
+      },
+      {
+        "Name": "Index",
+        "Flags": 2227295293,
+        "Standard": 1
+      },
+      {
+        "Name": "BackColor",
+        "Flags": 2161190405,
+        "Standard": 3
+      },
+      {
+        "Name": "ForeColor",
+        "Flags": 2161189893,
+        "Standard": 4
+      },
+      {
+        "Name": "Left",
+        "Flags": 2416059400,
+        "Standard": 5
+      },
+      {
+        "Name": "Top",
+        "Flags": 2415928330,
+        "Standard": 6
+      },
+      {
+        "Name": "Width",
+        "Flags": 2415928329,
+        "Standard": 7
+      },
+      {
+        "Name": "Height",
+        "Flags": 2415928331,
+        "Standard": 8
+      },
+      {
+        "Name": "Enabled",
+        "Flags": 2160149508,
+        "Standard": 9
+      },
+      {
+        "Name": "Visible",
+        "Flags": 2160149508,
+        "Standard": 10
+      },
+      {
+        "Name": "MousePointer",
+        "Flags": 2160141318,
+        "Standard": 11
+      },
+      {
+        "Name": "FontName",
+        "Flags": 2416067585,
+        "Standard": 13
+      },
+      {
+        "Name": "FontBold",
+        "Flags": 2415936516,
+        "Standard": 14
+      },
+      {
+        "Name": "FontItalic",
+        "Flags": 2415936516,
+        "Standard": 15
+      },
+      {
+        "Name": "FontStrikethru",
+        "Flags": 2415936516,
+        "Standard": 16
+      },
+      {
+        "Name": "FontUnderline",
+        "Flags": 2415936516,
+        "Standard": 17
+      },
+      {
+        "Name": "FontSize",
+        "Flags": 2416985095,
+        "Standard": 18
+      },
+      {
+        "Name": "TabIndex",
+        "Flags": 2214675458,
+        "Standard": 19
+      },
+      {
+        "Name": "Value",
+        "Flags": 12665862,
+        "Standard": -1
+      },
+      {
+        "Name": "Parent",
+        "Flags": 2147506239,
+        "Standard": 20
+      },
+      {
+        "Name": "DragMode",
+        "Flags": 2160140806,
+        "Standard": 21
+      },
+      {
+        "Name": "DragIcon",
+        "Flags": 2227282444,
+        "Standard": 22
+      },
+      {
+        "Name": "TabStop",
+        "Flags": 2160149508,
+        "Standard": 24
+      },
+      {
+        "Name": "Tag",
+        "Flags": 2160140801,
+        "Standard": 25
+      },
+      {
+        "Name": "Alignment",
+        "Flags": 14758918,
+        "Standard": -1
+      },
+      {
+        "Name": "HelpContextID",
+        "Flags": 2160140803,
+        "Standard": 31
+      },
+      {
+        "Name": "hWnd",
+        "Flags": 2147506178,
+        "Standard": 2
+      },
+      {
+        "Name": "DataSource",
+        "Flags": 2194747905,
+        "Standard": 40
+      },
+      {
+        "Name": "DataField",
+        "Flags": 2161190401,
+        "Standard": 41
+      },
+      {
+        "Name": "DataChanged",
+        "Flags": 2148542980,
+        "Standard": 42
+      }
+    ],
+    "Events": [
+      {
+        "Name": "Click",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "DragDrop",
+        "Parameters": 3,
+        "Profile": ""
+      },
+      {
+        "Name": "DragOver",
+        "Parameters": 4,
+        "Profile": ""
+      },
+      {
+        "Name": "GotFocus",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "KeyDown",
+        "Parameters": 2,
+        "Profile": ""
+      },
+      {
+        "Name": "KeyPress",
+        "Parameters": 1,
+        "Profile": ""
+      },
+      {
+        "Name": "KeyUp",
+        "Parameters": 2,
+        "Profile": ""
+      },
+      {
+        "Name": "LostFocus",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "MouseDown",
+        "Parameters": 4,
+        "Profile": ""
+      },
+      {
+        "Name": "MouseMove",
+        "Parameters": 4,
+        "Profile": ""
+      },
+      {
+        "Name": "MouseUp",
+        "Parameters": 4,
+        "Profile": ""
+      }
+    ]
+  },
+  "Combo": {
+    "Name": "Combo",
+    "Properties": [
+      {
+        "Name": "Name",
+        "Flags": 2248201278,
+        "Standard": 0
+      },
+      {
+        "Name": "Index",
+        "Flags": 2227295293,
+        "Standard": 1
+      },
+      {
+        "Name": "BackColor",
+        "Flags": 2161190405,
+        "Standard": 3
+      },
+      {
+        "Name": "ForeColor",
+        "Flags": 2161189893,
+        "Standard": 4
+      },
+      {
+        "Name": "Left",
+        "Flags": 2416059400,
+        "Standard": 5
+      },
+      {
+        "Name": "Top",
+        "Flags": 2415928330,
+        "Standard": 6
+      },
+      {
+        "Name": "Width",
+        "Flags": 2415928329,
+        "Standard": 7
+      },
+      {
+        "Name": "Height",
+        "Flags": 2415928331,
+        "Standard": 8
+      },
+      {
+        "Name": "Enabled",
+        "Flags": 2160149508,
+        "Standard": 9
+      },
+      {
+        "Name": "Visible",
+        "Flags": 2160149508,
+        "Standard": 10
+      },
+      {
+        "Name": "MousePointer",
+        "Flags": 2160141318,
+        "Standard": 11
+      },
+      {
+        "Name": "Text",
+        "Flags": 2160739329,
+        "Standard": 27
+      },
+      {
+        "Name": "FontName",
+        "Flags": 2416067585,
+        "Standard": 13
+      },
+      {
+        "Name": "FontBold",
+        "Flags": 2415936516,
+        "Standard": 14
+      },
+      {
+        "Name": "FontItalic",
+        "Flags": 2415936516,
+        "Standard": 15
+      },
+      {
+        "Name": "FontStrikethru",
+        "Flags": 2415936516,
+        "Standard": 16
+      },
+      {
+        "Name": "FontUnderline",
+        "Flags": 2415936516,
+        "Standard": 17
+      },
+      {
+        "Name": "FontSize",
+        "Flags": 2416985095,
+        "Standard": 18
+      },
+      {
+        "Name": "TabIndex",
+        "Flags": 2214675458,
+        "Standard": 19
+      },
+      {
+        "Name": "ListCount",
+        "Flags": 22530,
+        "Standard": -1
+      },
+      {
+        "Name": "ListIndex",
+        "Flags": 19458,
+        "Standard": -1
+      },
+      {
+        "Name": "List",
+        "Flags": 19713,
+        "Standard": -1
+      },
+      {
+        "Name": "Sorted",
+        "Flags": 14758404,
+        "Standard": -1
+      },
+      {
+        "Name": "SelStart",
+        "Flags": 19459,
+        "Standard": -1
+      },
+      {
+        "Name": "SelLength",
+        "Flags": 19459,
+        "Standard": -1
+      },
+      {
+        "Name": "SelText",
+        "Flags": 19457,
+        "Standard": -1
+      },
+      {
+        "Name": "Parent",
+        "Flags": 2147506239,
+        "Standard": 20
+      },
+      {
+        "Name": "DragMode",
+        "Flags": 2160140806,
+        "Standard": 21
+      },
+      {
+        "Name": "DragIcon",
+        "Flags": 2227282444,
+        "Standard": 22
+      },
+      {
+        "Name": "TabStop",
+        "Flags": 2160149508,
+        "Standard": 24
+      },
+      {
+        "Name": "Tag",
+        "Flags": 2160140801,
+        "Standard": 25
+      },
+      {
+        "Name": "Style",
+        "Flags": 14758918,
+        "Standard": -1
+      },
+      {
+        "Name": "hWnd",
+        "Flags": 2147506178,
+        "Standard": 2
+      },
+      {
+        "Name": "ItemData",
+        "Flags": 19715,
+        "Standard": -1
+      },
+      {
+        "Name": "NewIndex",
+        "Flags": 14338,
+        "Standard": -1
+      },
+      {
+        "Name": "HelpContextID",
+        "Flags": 2160140803,
+        "Standard": 31
+      },
+      {
+        "Name": " ",
+        "Flags": 2697009158,
+        "Standard": 39
+      }
+    ],
+    "Events": [
+      {
+        "Name": "Change",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "Click",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "DblClick",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "DragDrop",
+        "Parameters": 3,
+        "Profile": ""
+      },
+      {
+        "Name": "DragOver",
+        "Parameters": 4,
+        "Profile": ""
+      },
+      {
+        "Name": "DropDown",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "GotFocus",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "KeyDown",
+        "Parameters": 2,
+        "Profile": ""
+      },
+      {
+        "Name": "KeyPress",
+        "Parameters": 1,
+        "Profile": ""
+      },
+      {
+        "Name": "KeyUp",
+        "Parameters": 2,
+        "Profile": ""
+      },
+      {
+        "Name": "LostFocus",
+        "Parameters": 0,
+        "Profile": ""
+      }
+    ]
+  },
+  "Command": {
+    "Name": "Command",
+    "Properties": [
+      {
+        "Name": "Caption",
+        "Flags": 2160739329,
+        "Standard": 12
+      },
+      {
+        "Name": "Name",
+        "Flags": 2248201278,
+        "Standard": 0
+      },
+      {
+        "Name": "Index",
+        "Flags": 2227295293,
+        "Standard": 1
+      },
+      {
+        "Name": "BackColor",
+        "Flags": 2161190405,
+        "Standard": 3
+      },
+      {
+        "Name": "Left",
+        "Flags": 2416059400,
+        "Standard": 5
+      },
+      {
+        "Name": "Top",
+        "Flags": 2415928330,
+        "Standard": 6
+      },
+      {
+        "Name": "Width",
+        "Flags": 2415928329,
+        "Standard": 7
+      },
+      {
+        "Name": "Height",
+        "Flags": 2415928331,
+        "Standard": 8
+      },
+      {
+        "Name": "Enabled",
+        "Flags": 2160149508,
+        "Standard": 9
+      },
+      {
+        "Name": "Visible",
+        "Flags": 2160149508,
+        "Standard": 10
+      },
+      {
+        "Name": "MousePointer",
+        "Flags": 2160141318,
+        "Standard": 11
+      },
+      {
+        "Name": "FontName",
+        "Flags": 2416067585,
+        "Standard": 13
+      },
+      {
+        "Name": "FontSize",
+        "Flags": 2416985095,
+        "Standard": 18
+      },
+      {
+        "Name": "FontBold",
+        "Flags": 2415936516,
+        "Standard": 14
+      },
+      {
+        "Name": "FontItalic",
+        "Flags": 2415936516,
+        "Standard": 15
+      },
+      {
+        "Name": "FontStrikethru",
+        "Flags": 2415936516,
+        "Standard": 16
+      },
+      {
+        "Name": "FontUnderline",
+        "Flags": 2415936516,
+        "Standard": 17
+      },
+      {
+        "Name": "TabIndex",
+        "Flags": 2214675458,
+        "Standard": 19
+      },
+      {
+        "Name": "Value",
+        "Flags": 11268,
+        "Standard": -1
+      },
+      {
+        "Name": "Default",
+        "Flags": 79774724,
+        "Standard": -1
+      },
+      {
+        "Name": "Cancel",
+        "Flags": 79774724,
+        "Standard": -1
+      },
+      {
+        "Name": "Parent",
+        "Flags": 2147506239,
+        "Standard": 20
+      },
+      {
+        "Name": "DragMode",
+        "Flags": 2160140806,
+        "Standard": 21
+      },
+      {
+        "Name": "DragIcon",
+        "Flags": 2227282444,
+        "Standard": 22
+      },
+      {
+        "Name": "TabStop",
+        "Flags": 2160149508,
+        "Standard": 24
+      },
+      {
+        "Name": "Tag",
+        "Flags": 2160140801,
+        "Standard": 25
+      },
+      {
+        "Name": "hWnd",
+        "Flags": 2147506178,
+        "Standard": 2
+      },
+      {
+        "Name": "HelpContextID",
+        "Flags": 2160140803,
+        "Standard": 31
+      }
+    ],
+    "Events": [
+      {
+        "Name": "Click",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "DragDrop",
+        "Parameters": 3,
+        "Profile": ""
+      },
+      {
+        "Name": "DragOver",
+        "Parameters": 4,
+        "Profile": ""
+      },
+      {
+        "Name": "GotFocus",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "KeyDown",
+        "Parameters": 2,
+        "Profile": ""
+      },
+      {
+        "Name": "KeyPress",
+        "Parameters": 1,
+        "Profile": ""
+      },
+      {
+        "Name": "KeyUp",
+        "Parameters": 2,
+        "Profile": ""
+      },
+      {
+        "Name": "LostFocus",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "MouseDown",
+        "Parameters": 4,
+        "Profile": ""
+      },
+      {
+        "Name": "MouseMove",
+        "Parameters": 4,
+        "Profile": ""
+      },
+      {
+        "Name": "MouseUp",
+        "Parameters": 4,
+        "Profile": ""
+      }
+    ]
+  },
+  "Data": {
+    "Name": "Data",
+    "Properties": [
+      {
+        "Name": "Name",
+        "Flags": 2248201278,
+        "Standard": 0
+      },
+      {
+        "Name": "Index",
+        "Flags": 2227295293,
+        "Standard": 1
+      },
+      {
+        "Name": "Left",
+        "Flags": 2416059400,
+        "Standard": 5
+      },
+      {
+        "Name": "Top",
+        "Flags": 2415928330,
+        "Standard": 6
+      },
+      {
+        "Name": "Width",
+        "Flags": 2415928329,
+        "Standard": 7
+      },
+      {
+        "Name": "Height",
+        "Flags": 2415928331,
+        "Standard": 8
+      },
+      {
+        "Name": "Enabled",
+        "Flags": 2160149508,
+        "Standard": 9
+      },
+      {
+        "Name": "Visible",
+        "Flags": 2160149508,
+        "Standard": 10
+      },
+      {
+        "Name": "MousePointer",
+        "Flags": 2160141318,
+        "Standard": 11
+      },
+      {
+        "Name": "FontName",
+        "Flags": 2416067585,
+        "Standard": 13
+      },
+      {
+        "Name": "FontSize",
+        "Flags": 2416985095,
+        "Standard": 18
+      },
+      {
+        "Name": "FontBold",
+        "Flags": 2415936516,
+        "Standard": 14
+      },
+      {
+        "Name": "FontItalic",
+        "Flags": 2415936516,
+        "Standard": 15
+      },
+      {
+        "Name": "FontStrikethru",
+        "Flags": 2415936516,
+        "Standard": 16
+      },
+      {
+        "Name": "FontUnderline",
+        "Flags": 2415936516,
+        "Standard": 17
+      },
+      {
+        "Name": "Parent",
+        "Flags": 2147506239,
+        "Standard": 20
+      },
+      {
+        "Name": "Tag",
+        "Flags": 2160140801,
+        "Standard": 25
+      },
+      {
+        "Name": " ",
+        "Flags": 1073813508,
+        "Standard": -1
+      },
+      {
+        "Name": "Connect",
+        "Flags": 75277,
+        "Standard": -1
+      },
+      {
+        "Name": "DatabaseName",
+        "Flags": 1123853,
+        "Standard": -1
+      },
+      {
+        "Name": "Database",
+        "Flags": 23665,
+        "Standard": -1
+      },
+      {
+        "Name": "Recordset",
+        "Flags": 23666,
+        "Standard": -1
+      },
+      {
+        "Name": "Exclusive",
+        "Flags": 75268,
+        "Standard": -1
+      },
+      {
+        "Name": "ReadOnly",
+        "Flags": 75268,
+        "Standard": -1
+      },
+      {
+        "Name": "RecordSource",
+        "Flags": 1123853,
+        "Standard": -1
+      },
+      {
+        "Name": "Caption",
+        "Flags": 2160739329,
+        "Standard": 12
+      },
+      {
+        "Name": "EditMode",
+        "Flags": 14338,
+        "Standard": -1
+      },
+      {
+        "Name": "Options",
+        "Flags": 75266,
+        "Standard": -1
+      },
+      {
+        "Name": "BackColor",
+        "Flags": 2161190405,
+        "Standard": 3
+      },
+      {
+        "Name": "ForeColor",
+        "Flags": 2161189893,
+        "Standard": 4
+      },
+      {
+        "Name": "DragMode",
+        "Flags": 2160140806,
+        "Standard": 21
+      },
+      {
+        "Name": "DragIcon",
+        "Flags": 2227282444,
+        "Standard": 22
+      }
+    ],
+    "Events": [
+      {
+        "Name": "Error",
+        "Parameters": 2,
+        "Profile": ""
+      },
+      {
+        "Name": "Reposition",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "Validate",
+        "Parameters": 2,
+        "Profile": ""
+      },
+      {
+        "Name": "DragDrop",
+        "Parameters": 3,
+        "Profile": ""
+      },
+      {
+        "Name": "DragOver",
+        "Parameters": 4,
+        "Profile": ""
+      },
+      {
+        "Name": "MouseDown",
+        "Parameters": 4,
+        "Profile": ""
+      },
+      {
+        "Name": "MouseMove",
+        "Parameters": 4,
+        "Profile": ""
+      },
+      {
+        "Name": "MouseUp",
+        "Parameters": 4,
+        "Profile": ""
+      }
+    ]
+  },
+  "Dir": {
+    "Name": "Dir",
+    "Properties": [
+      {
+        "Name": "Name",
+        "Flags": 2248201278,
+        "Standard": 0
+      },
+      {
+        "Name": "Index",
+        "Flags": 2227295293,
+        "Standard": 1
+      },
+      {
+        "Name": "BackColor",
+        "Flags": 2161190405,
+        "Standard": 3
+      },
+      {
+        "Name": "ForeColor",
+        "Flags": 2161189893,
+        "Standard": 4
+      },
+      {
+        "Name": "Left",
+        "Flags": 2416059400,
+        "Standard": 5
+      },
+      {
+        "Name": "Top",
+        "Flags": 2415928330,
+        "Standard": 6
+      },
+      {
+        "Name": "Width",
+        "Flags": 2415928329,
+        "Standard": 7
+      },
+      {
+        "Name": "Height",
+        "Flags": 2415928331,
+        "Standard": 8
+      },
+      {
+        "Name": "Enabled",
+        "Flags": 2160149508,
+        "Standard": 9
+      },
+      {
+        "Name": "Visible",
+        "Flags": 2160149508,
+        "Standard": 10
+      },
+      {
+        "Name": "MousePointer",
+        "Flags": 2160141318,
+        "Standard": 11
+      },
+      {
+        "Name": "TabIndex",
+        "Flags": 2214675458,
+        "Standard": 19
+      },
+      {
+        "Name": "Path",
+        "Flags": 19457,
+        "Standard": -1
+      },
+      {
+        "Name": "ListCount",
+        "Flags": 22530,
+        "Standard": -1
+      },
+      {
+        "Name": "ListIndex",
+        "Flags": 19458,
+        "Standard": -1
+      },
+      {
+        "Name": "List",
+        "Flags": 22785,
+        "Standard": -1
+      },
+      {
+        "Name": "FontName",
+        "Flags": 2416067585,
+        "Standard": 13
+      },
+      {
+        "Name": "FontSize",
+        "Flags": 2416985095,
+        "Standard": 18
+      },
+      {
+        "Name": "FontBold",
+        "Flags": 2415936516,
+        "Standard": 14
+      },
+      {
+        "Name": "FontItalic",
+        "Flags": 2415936516,
+        "Standard": 15
+      },
+      {
+        "Name": "FontStrikethru",
+        "Flags": 2415936516,
+        "Standard": 16
+      },
+      {
+        "Name": "FontUnderline",
+        "Flags": 2415936516,
+        "Standard": 17
+      },
+      {
+        "Name": "Parent",
+        "Flags": 2147506239,
+        "Standard": 20
+      },
+      {
+        "Name": "DragMode",
+        "Flags": 2160140806,
+        "Standard": 21
+      },
+      {
+        "Name": "DragIcon",
+        "Flags": 2227282444,
+        "Standard": 22
+      },
+      {
+        "Name": "TabStop",
+        "Flags": 2160149508,
+        "Standard": 24
+      },
+      {
+        "Name": "Tag",
+        "Flags": 2160140801,
+        "Standard": 25
+      },
+      {
+        "Name": "hWnd",
+        "Flags": 2147506178,
+        "Standard": 2
+      },
+      {
+        "Name": "HelpContextID",
+        "Flags": 2160140803,
+        "Standard": 31
+      },
+      {
+        "Name": " ",
+        "Flags": 2697009158,
+        "Standard": 39
+      }
+    ],
+    "Events": [
+      {
+        "Name": "Change",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "Click",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "DragDrop",
+        "Parameters": 3,
+        "Profile": ""
+      },
+      {
+        "Name": "DragOver",
+        "Parameters": 4,
+        "Profile": ""
+      },
+      {
+        "Name": "GotFocus",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "KeyDown",
+        "Parameters": 2,
+        "Profile": ""
+      },
+      {
+        "Name": "KeyPress",
+        "Parameters": 1,
+        "Profile": ""
+      },
+      {
+        "Name": "KeyUp",
+        "Parameters": 2,
+        "Profile": ""
+      },
+      {
+        "Name": "LostFocus",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "MouseDown",
+        "Parameters": 4,
+        "Profile": ""
+      },
+      {
+        "Name": "MouseMove",
+        "Parameters": 4,
+        "Profile": ""
+      },
+      {
+        "Name": "MouseUp",
+        "Parameters": 4,
+        "Profile": ""
+      }
+    ]
+  },
+  "Drive": {
+    "Name": "Drive",
+    "Properties": [
+      {
+        "Name": "Name",
+        "Flags": 2248201278,
+        "Standard": 0
+      },
+      {
+        "Name": "Index",
+        "Flags": 2227295293,
+        "Standard": 1
+      },
+      {
+        "Name": "BackColor",
+        "Flags": 2161190405,
+        "Standard": 3
+      },
+      {
+        "Name": "ForeColor",
+        "Flags": 2161189893,
+        "Standard": 4
+      },
+      {
+        "Name": "Left",
+        "Flags": 2416059400,
+        "Standard": 5
+      },
+      {
+        "Name": "Top",
+        "Flags": 2415928330,
+        "Standard": 6
+      },
+      {
+        "Name": "Width",
+        "Flags": 2415928329,
+        "Standard": 7
+      },
+      {
+        "Name": "Height",
+        "Flags": 2415928331,
+        "Standard": 8
+      },
+      {
+        "Name": "Enabled",
+        "Flags": 2160149508,
+        "Standard": 9
+      },
+      {
+        "Name": "Visible",
+        "Flags": 2160149508,
+        "Standard": 10
+      },
+      {
+        "Name": "MousePointer",
+        "Flags": 2160141318,
+        "Standard": 11
+      },
+      {
+        "Name": "TabIndex",
+        "Flags": 2214675458,
+        "Standard": 19
+      },
+      {
+        "Name": "Drive",
+        "Flags": 19457,
+        "Standard": -1
+      },
+      {
+        "Name": "ListCount",
+        "Flags": 22530,
+        "Standard": -1
+      },
+      {
+        "Name": "ListIndex",
+        "Flags": 19458,
+        "Standard": -1
+      },
+      {
+        "Name": "List",
+        "Flags": 22785,
+        "Standard": -1
+      },
+      {
+        "Name": "FontName",
+        "Flags": 2416067585,
+        "Standard": 13
+      },
+      {
+        "Name": "FontSize",
+        "Flags": 2416985095,
+        "Standard": 18
+      },
+      {
+        "Name": "FontBold",
+        "Flags": 2415936516,
+        "Standard": 14
+      },
+      {
+        "Name": "FontItalic",
+        "Flags": 2415936516,
+        "Standard": 15
+      },
+      {
+        "Name": "FontStrikethru",
+        "Flags": 2415936516,
+        "Standard": 16
+      },
+      {
+        "Name": "FontUnderline",
+        "Flags": 2415936516,
+        "Standard": 17
+      },
+      {
+        "Name": "Parent",
+        "Flags": 2147506239,
+        "Standard": 20
+      },
+      {
+        "Name": "DragMode",
+        "Flags": 2160140806,
+        "Standard": 21
+      },
+      {
+        "Name": "DragIcon",
+        "Flags": 2227282444,
+        "Standard": 22
+      },
+      {
+        "Name": "TabStop",
+        "Flags": 2160149508,
+        "Standard": 24
+      },
+      {
+        "Name": "Tag",
+        "Flags": 2160140801,
+        "Standard": 25
+      },
+      {
+        "Name": "hWnd",
+        "Flags": 2147506178,
+        "Standard": 2
+      },
+      {
+        "Name": "HelpContextID",
+        "Flags": 2160140803,
+        "Standard": 31
+      }
+    ],
+    "Events": [
+      {
+        "Name": "Change",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "DragDrop",
+        "Parameters": 3,
+        "Profile": ""
+      },
+      {
+        "Name": "DragOver",
+        "Parameters": 4,
+        "Profile": ""
+      },
+      {
+        "Name": "GotFocus",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "KeyDown",
+        "Parameters": 2,
+        "Profile": ""
+      },
+      {
+        "Name": "KeyPress",
+        "Parameters": 1,
+        "Profile": ""
+      },
+      {
+        "Name": "KeyUp",
+        "Parameters": 2,
+        "Profile": ""
+      },
+      {
+        "Name": "LostFocus",
+        "Parameters": 0,
+        "Profile": ""
+      }
+    ]
+  },
+  "File": {
+    "Name": "File",
+    "Properties": [
+      {
+        "Name": "Name",
+        "Flags": 2248201278,
+        "Standard": 0
+      },
+      {
+        "Name": "Index",
+        "Flags": 2227295293,
+        "Standard": 1
+      },
+      {
+        "Name": "BackColor",
+        "Flags": 2161190405,
+        "Standard": 3
+      },
+      {
+        "Name": "ForeColor",
+        "Flags": 2161189893,
+        "Standard": 4
+      },
+      {
+        "Name": "Left",
+        "Flags": 2416059400,
+        "Standard": 5
+      },
+      {
+        "Name": "Top",
+        "Flags": 2415928330,
+        "Standard": 6
+      },
+      {
+        "Name": "Width",
+        "Flags": 2415928329,
+        "Standard": 7
+      },
+      {
+        "Name": "Height",
+        "Flags": 2415928331,
+        "Standard": 8
+      },
+      {
+        "Name": "Enabled",
+        "Flags": 2160149508,
+        "Standard": 9
+      },
+      {
+        "Name": "Visible",
+        "Flags": 2160149508,
+        "Standard": 10
+      },
+      {
+        "Name": "MousePointer",
+        "Flags": 2160141318,
+        "Standard": 11
+      },
+      {
+        "Name": "TabIndex",
+        "Flags": 2214675458,
+        "Standard": 19
+      },
+      {
+        "Name": "Path",
+        "Flags": 11265,
+        "Standard": -1
+      },
+      {
+        "Name": "Pattern",
+        "Flags": 12657665,
+        "Standard": -1
+      },
+      {
+        "Name": "FileName",
+        "Flags": 19457,
+        "Standard": -1
+      },
+      {
+        "Name": "Normal",
+        "Flags": 12657668,
+        "Standard": -1
+      },
+      {
+        "Name": "ReadOnly",
+        "Flags": 12657668,
+        "Standard": -1
+      },
+      {
+        "Name": "Archive",
+        "Flags": 12657668,
+        "Standard": -1
+      },
+      {
+        "Name": "Hidden",
+        "Flags": 12657668,
+        "Standard": -1
+      },
+      {
+        "Name": "System",
+        "Flags": 12657668,
+        "Standard": -1
+      },
+      {
+        "Name": "ListCount",
+        "Flags": 22530,
+        "Standard": -1
+      },
+      {
+        "Name": "ListIndex",
+        "Flags": 19458,
+        "Standard": -1
+      },
+      {
+        "Name": "List",
+        "Flags": 22785,
+        "Standard": -1
+      },
+      {
+        "Name": "FontName",
+        "Flags": 2416067585,
+        "Standard": 13
+      },
+      {
+        "Name": "FontSize",
+        "Flags": 2416985095,
+        "Standard": 18
+      },
+      {
+        "Name": "FontBold",
+        "Flags": 2415936516,
+        "Standard": 14
+      },
+      {
+        "Name": "FontItalic",
+        "Flags": 2415936516,
+        "Standard": 15
+      },
+      {
+        "Name": "FontStrikethru",
+        "Flags": 2415936516,
+        "Standard": 16
+      },
+      {
+        "Name": "FontUnderline",
+        "Flags": 2415936516,
+        "Standard": 17
+      },
+      {
+        "Name": "Parent",
+        "Flags": 2147506239,
+        "Standard": 20
+      },
+      {
+        "Name": "DragMode",
+        "Flags": 2160140806,
+        "Standard": 21
+      },
+      {
+        "Name": "DragIcon",
+        "Flags": 2227282444,
+        "Standard": 22
+      },
+      {
+        "Name": "TabStop",
+        "Flags": 2160149508,
+        "Standard": 24
+      },
+      {
+        "Name": "Tag",
+        "Flags": 2160140801,
+        "Standard": 25
+      },
+      {
+        "Name": "hWnd",
+        "Flags": 2147506178,
+        "Standard": 2
+      },
+      {
+        "Name": "HelpContextID",
+        "Flags": 2160140803,
+        "Standard": 31
+      },
+      {
+        "Name": "MultiSelect",
+        "Flags": 14758406,
+        "Standard": -1
+      },
+      {
+        "Name": "Selected",
+        "Flags": 19716,
+        "Standard": -1
+      },
+      {
+        "Name": "TopIndex",
+        "Flags": 19458,
+        "Standard": -1
+      },
+      {
+        "Name": " ",
+        "Flags": 2697009158,
+        "Standard": 39
+      }
+    ],
+    "Events": [
+      {
+        "Name": "Click",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "DblClick",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "DragDrop",
+        "Parameters": 3,
+        "Profile": ""
+      },
+      {
+        "Name": "DragOver",
+        "Parameters": 4,
+        "Profile": ""
+      },
+      {
+        "Name": "GotFocus",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "KeyDown",
+        "Parameters": 2,
+        "Profile": ""
+      },
+      {
+        "Name": "KeyPress",
+        "Parameters": 1,
+        "Profile": ""
+      },
+      {
+        "Name": "KeyUp",
+        "Parameters": 2,
+        "Profile": ""
+      },
+      {
+        "Name": "LostFocus",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "MouseDown",
+        "Parameters": 4,
+        "Profile": ""
+      },
+      {
+        "Name": "MouseMove",
+        "Parameters": 4,
+        "Profile": ""
+      },
+      {
+        "Name": "MouseUp",
+        "Parameters": 4,
+        "Profile": ""
+      },
+      {
+        "Name": "PathChange",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "PatternChange",
+        "Parameters": 0,
+        "Profile": ""
+      }
+    ]
+  },
+  "Form": {
+    "Name": "Form",
+    "Properties": [
+      {
+        "Name": "Caption",
+        "Flags": 2160739329,
+        "Standard": 12
+      },
+      {
+        "Name": "Name",
+        "Flags": 2248201278,
+        "Standard": 26
+      },
+      {
+        "Name": "hWnd",
+        "Flags": 2147506178,
+        "Standard": 2
+      },
+      {
+        "Name": "BackColor",
+        "Flags": 2161190405,
+        "Standard": 3
+      },
+      {
+        "Name": "ForeColor",
+        "Flags": 2161189893,
+        "Standard": 4
+      },
+      {
+        "Name": "Left",
+        "Flags": 2416059400,
+        "Standard": 5
+      },
+      {
+        "Name": "Top",
+        "Flags": 2415928330,
+        "Standard": 6
+      },
+      {
+        "Name": "Width",
+        "Flags": 2415928329,
+        "Standard": 7
+      },
+      {
+        "Name": "Height",
+        "Flags": 2415928331,
+        "Standard": 8
+      },
+      {
+        "Name": "Enabled",
+        "Flags": 2160149508,
+        "Standard": 9
+      },
+      {
+        "Name": "WindowState",
+        "Flags": 12665862,
+        "Standard": -1
+      },
+      {
+        "Name": "MousePointer",
+        "Flags": 2160141318,
+        "Standard": 11
+      },
+      {
+        "Name": "FontName",
+        "Flags": 2416067585,
+        "Standard": 13
+      },
+      {
+        "Name": "FontSize",
+        "Flags": 2416985095,
+        "Standard": 18
+      },
+      {
+        "Name": "FontBold",
+        "Flags": 2415936516,
+        "Standard": 14
+      },
+      {
+        "Name": "FontItalic",
+        "Flags": 2415936516,
+        "Standard": 15
+      },
+      {
+        "Name": "FontStrikethru",
+        "Flags": 2415936516,
+        "Standard": 16
+      },
+      {
+        "Name": "FontUnderline",
+        "Flags": 2415936516,
+        "Standard": 17
+      },
+      {
+        "Name": "hDC",
+        "Flags": 22530,
+        "Standard": -1
+      },
+      {
+        "Name": "CurrentX",
+        "Flags": 19463,
+        "Standard": -1
+      },
+      {
+        "Name": "CurrentY",
+        "Flags": 19463,
+        "Standard": -1
+      },
+      {
+        "Name": "ScaleLeft",
+        "Flags": 272647175,
+        "Standard": -1
+      },
+      {
+        "Name": "ScaleTop",
+        "Flags": 272647175,
+        "Standard": -1
+      },
+      {
+        "Name": "ScaleWidth",
+        "Flags": 268452871,
+        "Standard": -1
+      },
+      {
+        "Name": "ScaleHeight",
+        "Flags": 268452871,
+        "Standard": -1
+      },
+      {
+        "Name": "ScaleMode",
+        "Flags": 272770054,
+        "Standard": -1
+      },
+      {
+        "Name": "FontTransparent",
+        "Flags": 272647172,
+        "Standard": -1
+      },
+      {
+        "Name": "DrawStyle",
+        "Flags": 12665862,
+        "Standard": -1
+      },
+      {
+        "Name": "DrawWidth",
+        "Flags": 12665858,
+        "Standard": -1
+      },
+      {
+        "Name": "FillStyle",
+        "Flags": 12665862,
+        "Standard": -1
+      },
+      {
+        "Name": "FillColor",
+        "Flags": 13706245,
+        "Standard": -1
+      },
+      {
+        "Name": "DrawMode",
+        "Flags": 12665862,
+        "Standard": -1
+      },
+      {
+        "Name": "AutoRedraw",
+        "Flags": 272647172,
+        "Standard": -1
+      },
+      {
+        "Name": "Picture",
+        "Flags": 79766540,
+        "Standard": -1
+      },
+      {
+        "Name": "BorderStyle",
+        "Flags": 14758406,
+        "Standard": -1
+      },
+      {
+        "Name": "Icon",
+        "Flags": 12690956,
+        "Standard": -1
+      },
+      {
+        "Name": "LinkTopic",
+        "Flags": 12690433,
+        "Standard": -1
+      },
+      {
+        "Name": "LinkMode",
+        "Flags": 12657670,
+        "Standard": -1
+      },
+      {
+        "Name": "MaxButton",
+        "Flags": 14758404,
+        "Standard": -1
+      },
+      {
+        "Name": "MinButton",
+        "Flags": 14758404,
+        "Standard": -1
+      },
+      {
+        "Name": "ControlBox",
+        "Flags": 14758404,
+        "Standard": -1
+      },
+      {
+        "Name": "Image",
+        "Flags": 67131404,
+        "Standard": -1
+      },
+      {
+        "Name": " ",
+        "Flags": 1073813508,
+        "Standard": -1
+      },
+      {
+        "Name": " ",
+        "Flags": 1073813508,
+        "Standard": -1
+      },
+      {
+        "Name": " ",
+        "Flags": 1073813506,
+        "Standard": -1
+      },
+      {
+        "Name": " ",
+        "Flags": 1073813506,
+        "Standard": -1
+      },
+      {
+        "Name": "Visible",
+        "Flags": 2160149508,
+        "Standard": 10
+      },
+      {
+        "Name": "Tag",
+        "Flags": 2160140801,
+        "Standard": 25
+      },
+      {
+        "Name": "MDIChild",
+        "Flags": 14767108,
+        "Standard": -1
+      },
+      {
+        "Name": "KeyPreview",
+        "Flags": 12657156,
+        "Standard": -1
+      },
+      {
+        "Name": "ClipControls",
+        "Flags": 2162242052,
+        "Standard": 29
+      },
+      {
+        "Name": "HelpContextID",
+        "Flags": 2160140803,
+        "Standard": 31
+      },
+      {
+        "Name": "ActiveControl",
+        "Flags": 22592,
+        "Standard": -1
+      },
+      {
+        "Name": "ClientLeft",
+        "Flags": 33642504,
+        "Standard": -1
+      },
+      {
+        "Name": "ClientTop",
+        "Flags": 33642506,
+        "Standard": -1
+      },
+      {
+        "Name": "ClientWidth",
+        "Flags": 33642504,
+        "Standard": -1
+      },
+      {
+        "Name": "ClientHeight",
+        "Flags": 33642506,
+        "Standard": -1
+      }
+    ],
+    "Events": [
+      {
+        "Name": "DragDrop",
+        "Parameters": 3,
+        "Profile": ""
+      },
+      {
+        "Name": "DragOver",
+        "Parameters": 4,
+        "Profile": ""
+      },
+      {
+        "Name": "LinkClose",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "LinkError",
+        "Parameters": 1,
+        "Profile": ""
+      },
+      {
+        "Name": "LinkExecute",
+        "Parameters": 2,
+        "Profile": ""
+      },
+      {
+        "Name": "LinkOpen",
+        "Parameters": 1,
+        "Profile": ""
+      },
+      {
+        "Name": "Load",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "Resize",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "Unload",
+        "Parameters": 1,
+        "Profile": ""
+      },
+      {
+        "Name": "QueryUnload",
+        "Parameters": 2,
+        "Profile": ""
+      },
+      {
+        "Name": "Activate",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "Deactivate",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "Click",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "DblClick",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "GotFocus",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "KeyDown",
+        "Parameters": 2,
+        "Profile": ""
+      },
+      {
+        "Name": "KeyPress",
+        "Parameters": 1,
+        "Profile": ""
+      },
+      {
+        "Name": "KeyUp",
+        "Parameters": 2,
+        "Profile": ""
+      },
+      {
+        "Name": "LostFocus",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "MouseDown",
+        "Parameters": 4,
+        "Profile": ""
+      },
+      {
+        "Name": "MouseMove",
+        "Parameters": 4,
+        "Profile": ""
+      },
+      {
+        "Name": "MouseUp",
+        "Parameters": 4,
+        "Profile": ""
+      },
+      {
+        "Name": "Paint",
+        "Parameters": 0,
+        "Profile": ""
+      }
+    ]
+  },
+  "Frame": {
+    "Name": "Frame",
+    "Properties": [
+      {
+        "Name": "Caption",
+        "Flags": 2160739329,
+        "Standard": 12
+      },
+      {
+        "Name": "Name",
+        "Flags": 2248201278,
+        "Standard": 0
+      },
+      {
+        "Name": "Index",
+        "Flags": 2227295293,
+        "Standard": 1
+      },
+      {
+        "Name": "BackColor",
+        "Flags": 2161190405,
+        "Standard": 3
+      },
+      {
+        "Name": "ForeColor",
+        "Flags": 2161189893,
+        "Standard": 4
+      },
+      {
+        "Name": "Left",
+        "Flags": 2416059400,
+        "Standard": 5
+      },
+      {
+        "Name": "Top",
+        "Flags": 2415928330,
+        "Standard": 6
+      },
+      {
+        "Name": "Width",
+        "Flags": 2415928329,
+        "Standard": 7
+      },
+      {
+        "Name": "Height",
+        "Flags": 2415928331,
+        "Standard": 8
+      },
+      {
+        "Name": "Enabled",
+        "Flags": 2160149508,
+        "Standard": 9
+      },
+      {
+        "Name": "Visible",
+        "Flags": 2160149508,
+        "Standard": 10
+      },
+      {
+        "Name": "MousePointer",
+        "Flags": 2160141318,
+        "Standard": 11
+      },
+      {
+        "Name": "FontName",
+        "Flags": 2416067585,
+        "Standard": 13
+      },
+      {
+        "Name": "FontSize",
+        "Flags": 2416985095,
+        "Standard": 18
+      },
+      {
+        "Name": "FontBold",
+        "Flags": 2415936516,
+        "Standard": 14
+      },
+      {
+        "Name": "FontItalic",
+        "Flags": 2415936516,
+        "Standard": 15
+      },
+      {
+        "Name": "FontStrikethru",
+        "Flags": 2415936516,
+        "Standard": 16
+      },
+      {
+        "Name": "FontUnderline",
+        "Flags": 2415936516,
+        "Standard": 17
+      },
+      {
+        "Name": "TabIndex",
+        "Flags": 2214675458,
+        "Standard": 19
+      },
+      {
+        "Name": "Parent",
+        "Flags": 2147506239,
+        "Standard": 20
+      },
+      {
+        "Name": "DragMode",
+        "Flags": 2160140806,
+        "Standard": 21
+      },
+      {
+        "Name": "DragIcon",
+        "Flags": 2227282444,
+        "Standard": 22
+      },
+      {
+        "Name": "Tag",
+        "Flags": 2160140801,
+        "Standard": 25
+      },
+      {
+        "Name": "hWnd",
+        "Flags": 2147506178,
+        "Standard": 2
+      },
+      {
+        "Name": "ClipControls",
+        "Flags": 2162242052,
+        "Standard": 29
+      },
+      {
+        "Name": "HelpContextID",
+        "Flags": 2160140803,
+        "Standard": 31
+      }
+    ],
+    "Events": [
+      {
+        "Name": "DragDrop",
+        "Parameters": 3,
+        "Profile": ""
+      },
+      {
+        "Name": "DragOver",
+        "Parameters": 4,
+        "Profile": ""
+      },
+      {
+        "Name": "MouseDown",
+        "Parameters": 4,
+        "Profile": ""
+      },
+      {
+        "Name": "MouseMove",
+        "Parameters": 4,
+        "Profile": ""
+      },
+      {
+        "Name": "MouseUp",
+        "Parameters": 4,
+        "Profile": ""
+      },
+      {
+        "Name": "Click",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "DblClick",
+        "Parameters": 0,
+        "Profile": ""
+      }
+    ]
+  },
+  "HScroll": {
+    "Name": "HScroll",
+    "Properties": [
+      {
+        "Name": "Name",
+        "Flags": 2248201278,
+        "Standard": 0
+      },
+      {
+        "Name": "Index",
+        "Flags": 2227295293,
+        "Standard": 1
+      },
+      {
+        "Name": "Left",
+        "Flags": 2416059400,
+        "Standard": 5
+      },
+      {
+        "Name": "Top",
+        "Flags": 2415928330,
+        "Standard": 6
+      },
+      {
+        "Name": "Width",
+        "Flags": 2415928329,
+        "Standard": 7
+      },
+      {
+        "Name": "Height",
+        "Flags": 2415928331,
+        "Standard": 8
+      },
+      {
+        "Name": "Enabled",
+        "Flags": 2160149508,
+        "Standard": 9
+      },
+      {
+        "Name": "Visible",
+        "Flags": 2160149508,
+        "Standard": 10
+      },
+      {
+        "Name": "MousePointer",
+        "Flags": 2160141318,
+        "Standard": 11
+      },
+      {
+        "Name": "TabIndex",
+        "Flags": 2214675458,
+        "Standard": 19
+      },
+      {
+        "Name": "Min",
+        "Flags": 12657666,
+        "Standard": -1
+      },
+      {
+        "Name": "Max",
+        "Flags": 12657666,
+        "Standard": -1
+      },
+      {
+        "Name": "SmallChange",
+        "Flags": 12657666,
+        "Standard": -1
+      },
+      {
+        "Name": "LargeChange",
+        "Flags": 12657666,
+        "Standard": -1
+      },
+      {
+        "Name": "Value",
+        "Flags": 4269058,
+        "Standard": -1
+      },
+      {
+        "Name": "Parent",
+        "Flags": 2147506239,
+        "Standard": 20
+      },
+      {
+        "Name": "DragMode",
+        "Flags": 2160140806,
+        "Standard": 21
+      },
+      {
+        "Name": "DragIcon",
+        "Flags": 2227282444,
+        "Standard": 22
+      },
+      {
+        "Name": "TabStop",
+        "Flags": 2160149508,
+        "Standard": 24
+      },
+      {
+        "Name": "Tag",
+        "Flags": 2160140801,
+        "Standard": 25
+      },
+      {
+        "Name": "hWnd",
+        "Flags": 2147506178,
+        "Standard": 2
+      },
+      {
+        "Name": "HelpContextID",
+        "Flags": 2160140803,
+        "Standard": 31
+      }
+    ],
+    "Events": [
+      {
+        "Name": "Change",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "DragDrop",
+        "Parameters": 3,
+        "Profile": ""
+      },
+      {
+        "Name": "DragOver",
+        "Parameters": 4,
+        "Profile": ""
+      },
+      {
+        "Name": "GotFocus",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "KeyDown",
+        "Parameters": 2,
+        "Profile": ""
+      },
+      {
+        "Name": "KeyPress",
+        "Parameters": 1,
+        "Profile": ""
+      },
+      {
+        "Name": "KeyUp",
+        "Parameters": 2,
+        "Profile": ""
+      },
+      {
+        "Name": "LostFocus",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "Scroll",
+        "Parameters": 0,
+        "Profile": ""
+      }
+    ]
+  },
+  "Image": {
+    "Name": "Image",
+    "Properties": [
+      {
+        "Name": "Name",
+        "Flags": 2248201278,
+        "Standard": 0
+      },
+      {
+        "Name": "Index",
+        "Flags": 2227295293,
+        "Standard": 1
+      },
+      {
+        "Name": "Picture",
+        "Flags": 79767052,
+        "Standard": -1
+      },
+      {
+        "Name": "Left",
+        "Flags": 2416059400,
+        "Standard": 5
+      },
+      {
+        "Name": "Top",
+        "Flags": 2415928330,
+        "Standard": 6
+      },
+      {
+        "Name": "Width",
+        "Flags": 2415928329,
+        "Standard": 7
+      },
+      {
+        "Name": "Height",
+        "Flags": 2415928331,
+        "Standard": 8
+      },
+      {
+        "Name": "Enabled",
+        "Flags": 2160149508,
+        "Standard": 9
+      },
+      {
+        "Name": "Visible",
+        "Flags": 2160149508,
+        "Standard": 10
+      },
+      {
+        "Name": "MousePointer",
+        "Flags": 2160141318,
+        "Standard": 11
+      },
+      {
+        "Name": "Stretch",
+        "Flags": 12658180,
+        "Standard": -1
+      },
+      {
+        "Name": "Parent",
+        "Flags": 2147506239,
+        "Standard": 20
+      },
+      {
+        "Name": "DragMode",
+        "Flags": 2160140806,
+        "Standard": 21
+      },
+      {
+        "Name": "DragIcon",
+        "Flags": 2227282444,
+        "Standard": 22
+      },
+      {
+        "Name": "Tag",
+        "Flags": 2160140801,
+        "Standard": 25
+      },
+      {
+        "Name": "BorderStyle",
+        "Flags": 12657670,
+        "Standard": -1
+      },
+      {
+        "Name": "DataSource",
+        "Flags": 2194747905,
+        "Standard": 40
+      },
+      {
+        "Name": "DataField",
+        "Flags": 2161190401,
+        "Standard": 41
+      },
+      {
+        "Name": "DataChanged",
+        "Flags": 2148542980,
+        "Standard": 42
+      }
+    ],
+    "Events": [
+      {
+        "Name": "Click",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "DblClick",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "DragDrop",
+        "Parameters": 3,
+        "Profile": ""
+      },
+      {
+        "Name": "DragOver",
+        "Parameters": 4,
+        "Profile": ""
+      },
+      {
+        "Name": "MouseDown",
+        "Parameters": 4,
+        "Profile": ""
+      },
+      {
+        "Name": "MouseMove",
+        "Parameters": 4,
+        "Profile": ""
+      },
+      {
+        "Name": "MouseUp",
+        "Parameters": 4,
+        "Profile": ""
+      }
+    ]
+  },
+  "Label": {
+    "Name": "Label",
+    "Properties": [
+      {
+        "Name": "Caption",
+        "Flags": 2160739329,
+        "Standard": 12
+      },
+      {
+        "Name": "Name",
+        "Flags": 2248201278,
+        "Standard": 0
+      },
+      {
+        "Name": "Index",
+        "Flags": 2227295293,
+        "Standard": 1
+      },
+      {
+        "Name": "BackColor",
+        "Flags": 2161190405,
+        "Standard": 3
+      },
+      {
+        "Name": "ForeColor",
+        "Flags": 2161189893,
+        "Standard": 4
+      },
+      {
+        "Name": "Left",
+        "Flags": 2416059400,
+        "Standard": 5
+      },
+      {
+        "Name": "Top",
+        "Flags": 2415928330,
+        "Standard": 6
+      },
+      {
+        "Name": "Width",
+        "Flags": 2415928329,
+        "Standard": 7
+      },
+      {
+        "Name": "Height",
+        "Flags": 2415928331,
+        "Standard": 8
+      },
+      {
+        "Name": "Enabled",
+        "Flags": 2160149508,
+        "Standard": 9
+      },
+      {
+        "Name": "Visible",
+        "Flags": 2160149508,
+        "Standard": 10
+      },
+      {
+        "Name": "MousePointer",
+        "Flags": 2160141318,
+        "Standard": 11
+      },
+      {
+        "Name": "FontName",
+        "Flags": 2416067585,
+        "Standard": 13
+      },
+      {
+        "Name": "FontSize",
+        "Flags": 2416985095,
+        "Standard": 18
+      },
+      {
+        "Name": "FontBold",
+        "Flags": 2415936516,
+        "Standard": 14
+      },
+      {
+        "Name": "FontItalic",
+        "Flags": 2415936516,
+        "Standard": 15
+      },
+      {
+        "Name": "FontStrikethru",
+        "Flags": 2415936516,
+        "Standard": 16
+      },
+      {
+        "Name": "FontUnderline",
+        "Flags": 2415936516,
+        "Standard": 17
+      },
+      {
+        "Name": "TabIndex",
+        "Flags": 2214675458,
+        "Standard": 19
+      },
+      {
+        "Name": "BorderStyle",
+        "Flags": 12657670,
+        "Standard": -1
+      },
+      {
+        "Name": "Alignment",
+        "Flags": 29434502,
+        "Standard": -1
+      },
+      {
+        "Name": "LinkTopic",
+        "Flags": 2160174081,
+        "Standard": 34
+      },
+      {
+        "Name": "LinkItem",
+        "Flags": 2160174081,
+        "Standard": 33
+      },
+      {
+        "Name": "LinkMode",
+        "Flags": 2160174086,
+        "Standard": 32
+      },
+      {
+        "Name": "AutoSize",
+        "Flags": 12658180,
+        "Standard": -1
+      },
+      {
+        "Name": "Parent",
+        "Flags": 2147506239,
+        "Standard": 20
+      },
+      {
+        "Name": "DragMode",
+        "Flags": 2160140806,
+        "Standard": 21
+      },
+      {
+        "Name": "DragIcon",
+        "Flags": 2227282444,
+        "Standard": 22
+      },
+      {
+        "Name": "LinkTimeout",
+        "Flags": 2160140802,
+        "Standard": 35
+      },
+      {
+        "Name": "Tag",
+        "Flags": 2160140801,
+        "Standard": 25
+      },
+      {
+        "Name": "WordWrap",
+        "Flags": 12657668,
+        "Standard": -1
+      },
+      {
+        "Name": "BackStyle",
+        "Flags": 12657670,
+        "Standard": -1
+      },
+      {
+        "Name": "DataSource",
+        "Flags": 2194747905,
+        "Standard": 40
+      },
+      {
+        "Name": "DataField",
+        "Flags": 2161190401,
+        "Standard": 41
+      },
+      {
+        "Name": "DataChanged",
+        "Flags": 2148542980,
+        "Standard": 42
+      }
+    ],
+    "Events": [
+      {
+        "Name": "Change",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "Click",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "DblClick",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "DragDrop",
+        "Parameters": 3,
+        "Profile": ""
+      },
+      {
+        "Name": "DragOver",
+        "Parameters": 4,
+        "Profile": ""
+      },
+      {
+        "Name": "LinkClose",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "LinkError",
+        "Parameters": 1,
+        "Profile": ""
+      },
+      {
+        "Name": "LinkOpen",
+        "Parameters": 1,
+        "Profile": ""
+      },
+      {
+        "Name": "MouseDown",
+        "Parameters": 4,
+        "Profile": ""
+      },
+      {
+        "Name": "MouseMove",
+        "Parameters": 4,
+        "Profile": ""
+      },
+      {
+        "Name": "MouseUp",
+        "Parameters": 4,
+        "Profile": ""
+      },
+      {
+        "Name": "LinkNotify",
+        "Parameters": 0,
+        "Profile": ""
+      }
+    ]
+  },
+  "Line": {
+    "Name": "Line",
+    "Properties": [
+      {
+        "Name": "Name",
+        "Flags": 2248201278,
+        "Standard": 0
+      },
+      {
+        "Name": "Index",
+        "Flags": 2227295293,
+        "Standard": 1
+      },
+      {
+        "Name": "BorderColor",
+        "Flags": 2177966725,
+        "Standard": -1
+      },
+      {
+        "Name": "X1",
+        "Flags": 82952,
+        "Standard": -1
+      },
+      {
+        "Name": "Y1",
+        "Flags": 82954,
+        "Standard": -1
+      },
+      {
+        "Name": "X2",
+        "Flags": 82952,
+        "Standard": -1
+      },
+      {
+        "Name": "Y2",
+        "Flags": 82954,
+        "Standard": -1
+      },
+      {
+        "Name": "Visible",
+        "Flags": 2160149508,
+        "Standard": 10
+      },
+      {
+        "Name": "Parent",
+        "Flags": 2147506239,
+        "Standard": 20
+      },
+      {
+        "Name": "Tag",
+        "Flags": 2160140801,
+        "Standard": 25
+      },
+      {
+        "Name": "DrawMode",
+        "Flags": 12665862,
+        "Standard": -1
+      },
+      {
+        "Name": "BorderStyle",
+        "Flags": 29434502,
+        "Standard": -1
+      },
+      {
+        "Name": "BorderWidth",
+        "Flags": 12657666,
+        "Standard": -1
+      }
+    ],
+    "Events": []
+  },
+  "List": {
+    "Name": "List",
+    "Properties": [
+      {
+        "Name": "Name",
+        "Flags": 2248201278,
+        "Standard": 0
+      },
+      {
+        "Name": "Index",
+        "Flags": 2227295293,
+        "Standard": 1
+      },
+      {
+        "Name": "BackColor",
+        "Flags": 2161190405,
+        "Standard": 3
+      },
+      {
+        "Name": "ForeColor",
+        "Flags": 2161189893,
+        "Standard": 4
+      },
+      {
+        "Name": "Left",
+        "Flags": 2416059400,
+        "Standard": 5
+      },
+      {
+        "Name": "Top",
+        "Flags": 2415928330,
+        "Standard": 6
+      },
+      {
+        "Name": "Width",
+        "Flags": 2415928329,
+        "Standard": 7
+      },
+      {
+        "Name": "Height",
+        "Flags": 2415928331,
+        "Standard": 8
+      },
+      {
+        "Name": "Enabled",
+        "Flags": 2160149508,
+        "Standard": 9
+      },
+      {
+        "Name": "Visible",
+        "Flags": 2160149508,
+        "Standard": 10
+      },
+      {
+        "Name": "MousePointer",
+        "Flags": 2160141318,
+        "Standard": 11
+      },
+      {
+        "Name": "FontName",
+        "Flags": 2416067585,
+        "Standard": 13
+      },
+      {
+        "Name": "FontSize",
+        "Flags": 2416985095,
+        "Standard": 18
+      },
+      {
+        "Name": "FontBold",
+        "Flags": 2415936516,
+        "Standard": 14
+      },
+      {
+        "Name": "FontItalic",
+        "Flags": 2415936516,
+        "Standard": 15
+      },
+      {
+        "Name": "FontStrikethru",
+        "Flags": 2415936516,
+        "Standard": 16
+      },
+      {
+        "Name": "FontUnderline",
+        "Flags": 2415936516,
+        "Standard": 17
+      },
+      {
+        "Name": "TabIndex",
+        "Flags": 2214675458,
+        "Standard": 19
+      },
+      {
+        "Name": "ListCount",
+        "Flags": 22530,
+        "Standard": -1
+      },
+      {
+        "Name": "ListIndex",
+        "Flags": 19458,
+        "Standard": -1
+      },
+      {
+        "Name": "List",
+        "Flags": 19713,
+        "Standard": -1
+      },
+      {
+        "Name": "Sorted",
+        "Flags": 14758404,
+        "Standard": -1
+      },
+      {
+        "Name": "Text",
+        "Flags": 22529,
+        "Standard": -1
+      },
+      {
+        "Name": "Parent",
+        "Flags": 2147506239,
+        "Standard": 20
+      },
+      {
+        "Name": "DragMode",
+        "Flags": 2160140806,
+        "Standard": 21
+      },
+      {
+        "Name": "DragIcon",
+        "Flags": 2227282444,
+        "Standard": 22
+      },
+      {
+        "Name": "TabStop",
+        "Flags": 2160149508,
+        "Standard": 24
+      },
+      {
+        "Name": "Tag",
+        "Flags": 2160140801,
+        "Standard": 25
+      },
+      {
+        "Name": "Columns",
+        "Flags": 14754818,
+        "Standard": -1
+      },
+      {
+        "Name": "MultiSelect",
+        "Flags": 14758406,
+        "Standard": -1
+      },
+      {
+        "Name": "Selected",
+        "Flags": 19716,
+        "Standard": -1
+      },
+      {
+        "Name": "SelCount",
+        "Flags": 22530,
+        "Standard": -1
+      },
+      {
+        "Name": "TopIndex",
+        "Flags": 19458,
+        "Standard": -1
+      },
+      {
+        "Name": "ItemData",
+        "Flags": 19715,
+        "Standard": -1
+      },
+      {
+        "Name": "NewIndex",
+        "Flags": 14338,
+        "Standard": -1
+      },
+      {
+        "Name": "HelpContextID",
+        "Flags": 2160140803,
+        "Standard": 31
+      },
+      {
+        "Name": "hWnd",
+        "Flags": 2147506178,
+        "Standard": 2
+      },
+      {
+        "Name": " ",
+        "Flags": 2697009158,
+        "Standard": 39
+      }
+    ],
+    "Events": [
+      {
+        "Name": "Click",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "DblClick",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "DragDrop",
+        "Parameters": 3,
+        "Profile": ""
+      },
+      {
+        "Name": "DragOver",
+        "Parameters": 4,
+        "Profile": ""
+      },
+      {
+        "Name": "GotFocus",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "KeyDown",
+        "Parameters": 2,
+        "Profile": ""
+      },
+      {
+        "Name": "KeyPress",
+        "Parameters": 1,
+        "Profile": ""
+      },
+      {
+        "Name": "KeyUp",
+        "Parameters": 2,
+        "Profile": ""
+      },
+      {
+        "Name": "LostFocus",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "MouseDown",
+        "Parameters": 4,
+        "Profile": ""
+      },
+      {
+        "Name": "MouseMove",
+        "Parameters": 4,
+        "Profile": ""
+      },
+      {
+        "Name": "MouseUp",
+        "Parameters": 4,
+        "Profile": ""
+      }
+    ]
+  },
+  "MDIForm": {
+    "Name": "MDIForm",
+    "Properties": [
+      {
+        "Name": "Caption",
+        "Flags": 2160739329,
+        "Standard": 12
+      },
+      {
+        "Name": "Name",
+        "Flags": 2248201278,
+        "Standard": 26
+      },
+      {
+        "Name": "hWnd",
+        "Flags": 2147506178,
+        "Standard": 2
+      },
+      {
+        "Name": " ",
+        "Flags": 1073743876,
+        "Standard": 30
+      },
+      {
+        "Name": " ",
+        "Flags": 1073743876,
+        "Standard": 30
+      },
+      {
+        "Name": "Left",
+        "Flags": 2416059400,
+        "Standard": 5
+      },
+      {
+        "Name": "Top",
+        "Flags": 2415928330,
+        "Standard": 6
+      },
+      {
+        "Name": "Width",
+        "Flags": 2415928329,
+        "Standard": 7
+      },
+      {
+        "Name": "Height",
+        "Flags": 2415928331,
+        "Standard": 8
+      },
+      {
+        "Name": "Enabled",
+        "Flags": 2160149508,
+        "Standard": 9
+      },
+      {
+        "Name": "WindowState",
+        "Flags": 12665862,
+        "Standard": -1
+      },
+      {
+        "Name": "MousePointer",
+        "Flags": 2160141318,
+        "Standard": 11
+      },
+      {
+        "Name": "ScrollBars",
+        "Flags": 14758404,
+        "Standard": -1
+      },
+      {
+        "Name": "ActiveForm",
+        "Flags": 22591,
+        "Standard": -1
+      },
+      {
+        "Name": " ",
+        "Flags": 1073743876,
+        "Standard": 30
+      },
+      {
+        "Name": " ",
+        "Flags": 1073743876,
+        "Standard": 30
+      },
+      {
+        "Name": " ",
+        "Flags": 1073743876,
+        "Standard": 30
+      },
+      {
+        "Name": " ",
+        "Flags": 1073743876,
+        "Standard": 30
+      },
+      {
+        "Name": " ",
+        "Flags": 1073743876,
+        "Standard": 30
+      },
+      {
+        "Name": " ",
+        "Flags": 1073743876,
+        "Standard": 30
+      },
+      {
+        "Name": " ",
+        "Flags": 1073743876,
+        "Standard": 30
+      },
+      {
+        "Name": " ",
+        "Flags": 1073743876,
+        "Standard": 30
+      },
+      {
+        "Name": " ",
+        "Flags": 1073743876,
+        "Standard": 30
+      },
+      {
+        "Name": "ScaleWidth",
+        "Flags": 22535,
+        "Standard": -1
+      },
+      {
+        "Name": "ScaleHeight",
+        "Flags": 22535,
+        "Standard": -1
+      },
+      {
+        "Name": " ",
+        "Flags": 1073743876,
+        "Standard": 30
+      },
+      {
+        "Name": " ",
+        "Flags": 1073743876,
+        "Standard": 30
+      },
+      {
+        "Name": " ",
+        "Flags": 1073743876,
+        "Standard": 30
+      },
+      {
+        "Name": " ",
+        "Flags": 1073743876,
+        "Standard": 30
+      },
+      {
+        "Name": " ",
+        "Flags": 1073743876,
+        "Standard": 30
+      },
+      {
+        "Name": " ",
+        "Flags": 1073743876,
+        "Standard": 30
+      },
+      {
+        "Name": " ",
+        "Flags": 1073743876,
+        "Standard": 30
+      },
+      {
+        "Name": " ",
+        "Flags": 1073743876,
+        "Standard": 30
+      },
+      {
+        "Name": " ",
+        "Flags": 1073743876,
+        "Standard": 30
+      },
+      {
+        "Name": " ",
+        "Flags": 1073743876,
+        "Standard": 30
+      },
+      {
+        "Name": "Icon",
+        "Flags": 12690956,
+        "Standard": -1
+      },
+      {
+        "Name": "LinkTopic",
+        "Flags": 12690433,
+        "Standard": -1
+      },
+      {
+        "Name": "LinkMode",
+        "Flags": 12657670,
+        "Standard": -1
+      },
+      {
+        "Name": " ",
+        "Flags": 1073743876,
+        "Standard": 30
+      },
+      {
+        "Name": " ",
+        "Flags": 1073743876,
+        "Standard": 30
+      },
+      {
+        "Name": " ",
+        "Flags": 1073743876,
+        "Standard": 30
+      },
+      {
+        "Name": " ",
+        "Flags": 1073743876,
+        "Standard": 30
+      },
+      {
+        "Name": " ",
+        "Flags": 1073813508,
+        "Standard": -1
+      },
+      {
+        "Name": " ",
+        "Flags": 1073813508,
+        "Standard": -1
+      },
+      {
+        "Name": " ",
+        "Flags": 1073813506,
+        "Standard": -1
+      },
+      {
+        "Name": " ",
+        "Flags": 1073813506,
+        "Standard": -1
+      },
+      {
+        "Name": "Visible",
+        "Flags": 2160149508,
+        "Standard": 10
+      },
+      {
+        "Name": "Tag",
+        "Flags": 2160140801,
+        "Standard": 25
+      },
+      {
+        "Name": " ",
+        "Flags": 1073743876,
+        "Standard": 30
+      },
+      {
+        "Name": " ",
+        "Flags": 1073743876,
+        "Standard": 30
+      },
+      {
+        "Name": " ",
+        "Flags": 1073743876,
+        "Standard": 30
+      },
+      {
+        "Name": "HelpContextID",
+        "Flags": 2160140803,
+        "Standard": 31
+      },
+      {
+        "Name": "ActiveControl",
+        "Flags": 22592,
+        "Standard": -1
+      },
+      {
+        "Name": "ClientLeft",
+        "Flags": 33642504,
+        "Standard": -1
+      },
+      {
+        "Name": "ClientTop",
+        "Flags": 33642506,
+        "Standard": -1
+      },
+      {
+        "Name": "ClientWidth",
+        "Flags": 33642504,
+        "Standard": -1
+      },
+      {
+        "Name": "ClientHeight",
+        "Flags": 33642506,
+        "Standard": -1
+      }
+    ],
+    "Events": [
+      {
+        "Name": "DragDrop",
+        "Parameters": 3,
+        "Profile": ""
+      },
+      {
+        "Name": "DragOver",
+        "Parameters": 4,
+        "Profile": ""
+      },
+      {
+        "Name": "LinkClose",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "LinkError",
+        "Parameters": 1,
+        "Profile": ""
+      },
+      {
+        "Name": "LinkExecute",
+        "Parameters": 2,
+        "Profile": ""
+      },
+      {
+        "Name": "LinkOpen",
+        "Parameters": 1,
+        "Profile": ""
+      },
+      {
+        "Name": "Load",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "Resize",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "Unload",
+        "Parameters": 1,
+        "Profile": ""
+      },
+      {
+        "Name": "QueryUnload",
+        "Parameters": 2,
+        "Profile": ""
+      },
+      {
+        "Name": "Activate",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "Deactivate",
+        "Parameters": 0,
+        "Profile": ""
+      }
+    ]
+  },
+  "Menu": {
+    "Name": "Menu",
+    "Properties": [
+      {
+        "Name": "Name",
+        "Flags": 2248201278,
+        "Standard": 0
+      },
+      {
+        "Name": "Index",
+        "Flags": 2227295293,
+        "Standard": 1
+      },
+      {
+        "Name": "Visible",
+        "Flags": 12657668,
+        "Standard": -1
+      },
+      {
+        "Name": "Caption",
+        "Flags": 4302337,
+        "Standard": -1
+      },
+      {
+        "Name": "Checked",
+        "Flags": 12657668,
+        "Standard": -1
+      },
+      {
+        "Name": "Enabled",
+        "Flags": 12657668,
+        "Standard": -1
+      },
+      {
+        "Name": " ",
+        "Flags": 12659716,
+        "Standard": -1
+      },
+      {
+        "Name": " ",
+        "Flags": 12663300,
+        "Standard": -1
+      },
+      {
+        "Name": "Shortcut",
+        "Flags": 46510594,
+        "Standard": -1
+      },
+      {
+        "Name": "Parent",
+        "Flags": 2147506239,
+        "Standard": 20
+      },
+      {
+        "Name": "Tag",
+        "Flags": 2160140801,
+        "Standard": 25
+      },
+      {
+        "Name": "WindowList",
+        "Flags": 12661764,
+        "Standard": -1
+      },
+      {
+        "Name": "HelpContextID",
+        "Flags": 2160140803,
+        "Standard": 31
+      }
+    ],
+    "Events": [
+      {
+        "Name": "Click",
+        "Parameters": 0,
+        "Profile": ""
+      }
+    ]
+  },
+  "Option": {
+    "Name": "Option",
+    "Properties": [
+      {
+        "Name": "Caption",
+        "Flags": 2160739329,
+        "Standard": 12
+      },
+      {
+        "Name": "Name",
+        "Flags": 2248201278,
+        "Standard": 0
+      },
+      {
+        "Name": "Index",
+        "Flags": 2227295293,
+        "Standard": 1
+      },
+      {
+        "Name": "BackColor",
+        "Flags": 2161190405,
+        "Standard": 3
+      },
+      {
+        "Name": "ForeColor",
+        "Flags": 2161189893,
+        "Standard": 4
+      },
+      {
+        "Name": "Left",
+        "Flags": 2416059400,
+        "Standard": 5
+      },
+      {
+        "Name": "Top",
+        "Flags": 2415928330,
+        "Standard": 6
+      },
+      {
+        "Name": "Width",
+        "Flags": 2415928329,
+        "Standard": 7
+      },
+      {
+        "Name": "Height",
+        "Flags": 2415928331,
+        "Standard": 8
+      },
+      {
+        "Name": "Enabled",
+        "Flags": 2160149508,
+        "Standard": 9
+      },
+      {
+        "Name": "Visible",
+        "Flags": 2160149508,
+        "Standard": 10
+      },
+      {
+        "Name": "MousePointer",
+        "Flags": 2160141318,
+        "Standard": 11
+      },
+      {
+        "Name": "FontName",
+        "Flags": 2416067585,
+        "Standard": 13
+      },
+      {
+        "Name": "FontSize",
+        "Flags": 2416985095,
+        "Standard": 18
+      },
+      {
+        "Name": "FontBold",
+        "Flags": 2415936516,
+        "Standard": 14
+      },
+      {
+        "Name": "FontItalic",
+        "Flags": 2415936516,
+        "Standard": 15
+      },
+      {
+        "Name": "FontStrikethru",
+        "Flags": 2415936516,
+        "Standard": 16
+      },
+      {
+        "Name": "FontUnderline",
+        "Flags": 2415936516,
+        "Standard": 17
+      },
+      {
+        "Name": "TabIndex",
+        "Flags": 2214675458,
+        "Standard": 19
+      },
+      {
+        "Name": "Value",
+        "Flags": 12665860,
+        "Standard": -1
+      },
+      {
+        "Name": "Parent",
+        "Flags": 2147506239,
+        "Standard": 20
+      },
+      {
+        "Name": "DragMode",
+        "Flags": 2160140806,
+        "Standard": 21
+      },
+      {
+        "Name": "DragIcon",
+        "Flags": 2227282444,
+        "Standard": 22
+      },
+      {
+        "Name": "TabStop",
+        "Flags": 2160149508,
+        "Standard": 24
+      },
+      {
+        "Name": "Tag",
+        "Flags": 2160140801,
+        "Standard": 25
+      },
+      {
+        "Name": "Alignment",
+        "Flags": 14758918,
+        "Standard": -1
+      },
+      {
+        "Name": "HelpContextID",
+        "Flags": 2160140803,
+        "Standard": 31
+      },
+      {
+        "Name": "hWnd",
+        "Flags": 2147506178,
+        "Standard": 2
+      }
+    ],
+    "Events": [
+      {
+        "Name": "Click",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "DblClick",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "DragDrop",
+        "Parameters": 3,
+        "Profile": ""
+      },
+      {
+        "Name": "DragOver",
+        "Parameters": 4,
+        "Profile": ""
+      },
+      {
+        "Name": "GotFocus",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "KeyDown",
+        "Parameters": 2,
+        "Profile": ""
+      },
+      {
+        "Name": "KeyPress",
+        "Parameters": 1,
+        "Profile": ""
+      },
+      {
+        "Name": "KeyUp",
+        "Parameters": 2,
+        "Profile": ""
+      },
+      {
+        "Name": "LostFocus",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "MouseDown",
+        "Parameters": 4,
+        "Profile": ""
+      },
+      {
+        "Name": "MouseMove",
+        "Parameters": 4,
+        "Profile": ""
+      },
+      {
+        "Name": "MouseUp",
+        "Parameters": 4,
+        "Profile": ""
+      }
+    ]
+  },
+  "Picture": {
+    "Name": "Picture",
+    "Properties": [
+      {
+        "Name": "Name",
+        "Flags": 2248201278,
+        "Standard": 0
+      },
+      {
+        "Name": "BackColor",
+        "Flags": 2161190405,
+        "Standard": 3
+      },
+      {
+        "Name": "Index",
+        "Flags": 2227295293,
+        "Standard": 1
+      },
+      {
+        "Name": "Picture",
+        "Flags": 79766540,
+        "Standard": -1
+      },
+      {
+        "Name": "ForeColor",
+        "Flags": 2161189893,
+        "Standard": 4
+      },
+      {
+        "Name": "Left",
+        "Flags": 2416059400,
+        "Standard": 5
+      },
+      {
+        "Name": "Top",
+        "Flags": 2415928330,
+        "Standard": 6
+      },
+      {
+        "Name": "Width",
+        "Flags": 2415928329,
+        "Standard": 7
+      },
+      {
+        "Name": "Height",
+        "Flags": 2415928331,
+        "Standard": 8
+      },
+      {
+        "Name": "Enabled",
+        "Flags": 2160149508,
+        "Standard": 9
+      },
+      {
+        "Name": "Visible",
+        "Flags": 2160149508,
+        "Standard": 10
+      },
+      {
+        "Name": "MousePointer",
+        "Flags": 2160141318,
+        "Standard": 11
+      },
+      {
+        "Name": "FontName",
+        "Flags": 2416067585,
+        "Standard": 13
+      },
+      {
+        "Name": "FontSize",
+        "Flags": 2416985095,
+        "Standard": 18
+      },
+      {
+        "Name": "FontBold",
+        "Flags": 2415936516,
+        "Standard": 14
+      },
+      {
+        "Name": "FontItalic",
+        "Flags": 2415936516,
+        "Standard": 15
+      },
+      {
+        "Name": "FontStrikethru",
+        "Flags": 2415936516,
+        "Standard": 16
+      },
+      {
+        "Name": "FontUnderline",
+        "Flags": 2415936516,
+        "Standard": 17
+      },
+      {
+        "Name": "TabIndex",
+        "Flags": 2214675458,
+        "Standard": 19
+      },
+      {
+        "Name": "hDC",
+        "Flags": 22530,
+        "Standard": -1
+      },
+      {
+        "Name": "CurrentX",
+        "Flags": 19463,
+        "Standard": -1
+      },
+      {
+        "Name": "CurrentY",
+        "Flags": 19463,
+        "Standard": -1
+      },
+      {
+        "Name": "ScaleLeft",
+        "Flags": 272647175,
+        "Standard": -1
+      },
+      {
+        "Name": "ScaleTop",
+        "Flags": 272647175,
+        "Standard": -1
+      },
+      {
+        "Name": "ScaleWidth",
+        "Flags": 268452871,
+        "Standard": -1
+      },
+      {
+        "Name": "ScaleHeight",
+        "Flags": 268452871,
+        "Standard": -1
+      },
+      {
+        "Name": "ScaleMode",
+        "Flags": 272770054,
+        "Standard": -1
+      },
+      {
+        "Name": "FontTransparent",
+        "Flags": 272647172,
+        "Standard": -1
+      },
+      {
+        "Name": "DrawStyle",
+        "Flags": 12665862,
+        "Standard": -1
+      },
+      {
+        "Name": "DrawWidth",
+        "Flags": 12665858,
+        "Standard": -1
+      },
+      {
+        "Name": "FillStyle",
+        "Flags": 12665862,
+        "Standard": -1
+      },
+      {
+        "Name": "FillColor",
+        "Flags": 13706245,
+        "Standard": -1
+      },
+      {
+        "Name": "DrawMode",
+        "Flags": 12665862,
+        "Standard": -1
+      },
+      {
+        "Name": "AutoRedraw",
+        "Flags": 272647172,
+        "Standard": -1
+      },
+      {
+        "Name": " ",
+        "Flags": 1073743876,
+        "Standard": 30
+      },
+      {
+        "Name": "AutoSize",
+        "Flags": 12658180,
+        "Standard": -1
+      },
+      {
+        "Name": "BorderStyle",
+        "Flags": 2160149510,
+        "Standard": 28
+      },
+      {
+        "Name": "LinkTopic",
+        "Flags": 2160174081,
+        "Standard": 34
+      },
+      {
+        "Name": "LinkItem",
+        "Flags": 2160174081,
+        "Standard": 33
+      },
+      {
+        "Name": "LinkMode",
+        "Flags": 2160174086,
+        "Standard": 32
+      },
+      {
+        "Name": "Image",
+        "Flags": 67131404,
+        "Standard": -1
+      },
+      {
+        "Name": "Parent",
+        "Flags": 2147506239,
+        "Standard": 20
+      },
+      {
+        "Name": "DragMode",
+        "Flags": 2160140806,
+        "Standard": 21
+      },
+      {
+        "Name": "DragIcon",
+        "Flags": 2227282444,
+        "Standard": 22
+      },
+      {
+        "Name": "LinkTimeout",
+        "Flags": 2160140802,
+        "Standard": 35
+      },
+      {
+        "Name": "TabStop",
+        "Flags": 2160149508,
+        "Standard": 24
+      },
+      {
+        "Name": "Tag",
+        "Flags": 2160140801,
+        "Standard": 25
+      },
+      {
+        "Name": "hWnd",
+        "Flags": 2147506178,
+        "Standard": 2
+      },
+      {
+        "Name": "ClipControls",
+        "Flags": 2162242052,
+        "Standard": 29
+      },
+      {
+        "Name": "HelpContextID",
+        "Flags": 2160140803,
+        "Standard": 31
+      },
+      {
+        "Name": "Align",
+        "Flags": 2160141318,
+        "Standard": 38
+      },
+      {
+        "Name": " ",
+        "Flags": 2697009158,
+        "Standard": 39
+      },
+      {
+        "Name": "DataSource",
+        "Flags": 2194747905,
+        "Standard": 40
+      },
+      {
+        "Name": "DataField",
+        "Flags": 2161190401,
+        "Standard": 41
+      },
+      {
+        "Name": "DataChanged",
+        "Flags": 2148542980,
+        "Standard": 42
+      }
+    ],
+    "Events": [
+      {
+        "Name": "Change",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "Click",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "DblClick",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "DragDrop",
+        "Parameters": 3,
+        "Profile": ""
+      },
+      {
+        "Name": "DragOver",
+        "Parameters": 4,
+        "Profile": ""
+      },
+      {
+        "Name": "GotFocus",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "KeyDown",
+        "Parameters": 2,
+        "Profile": ""
+      },
+      {
+        "Name": "KeyPress",
+        "Parameters": 1,
+        "Profile": ""
+      },
+      {
+        "Name": "KeyUp",
+        "Parameters": 2,
+        "Profile": ""
+      },
+      {
+        "Name": "LinkClose",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "LinkError",
+        "Parameters": 1,
+        "Profile": ""
+      },
+      {
+        "Name": "LinkOpen",
+        "Parameters": 1,
+        "Profile": ""
+      },
+      {
+        "Name": "LostFocus",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "MouseDown",
+        "Parameters": 4,
+        "Profile": ""
+      },
+      {
+        "Name": "MouseMove",
+        "Parameters": 4,
+        "Profile": ""
+      },
+      {
+        "Name": "MouseUp",
+        "Parameters": 4,
+        "Profile": ""
+      },
+      {
+        "Name": "Paint",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "LinkNotify",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "Resize",
+        "Parameters": 0,
+        "Profile": ""
+      }
+    ]
+  },
+  "Shape": {
+    "Name": "Shape",
+    "Properties": [
+      {
+        "Name": "Name",
+        "Flags": 2248201278,
+        "Standard": 0
+      },
+      {
+        "Name": "Index",
+        "Flags": 2227295293,
+        "Standard": 1
+      },
+      {
+        "Name": "BackColor",
+        "Flags": 2161190405,
+        "Standard": 3
+      },
+      {
+        "Name": "BorderColor",
+        "Flags": 2177966725,
+        "Standard": -1
+      },
+      {
+        "Name": "Left",
+        "Flags": 2416059400,
+        "Standard": 5
+      },
+      {
+        "Name": "Top",
+        "Flags": 2415928330,
+        "Standard": 6
+      },
+      {
+        "Name": "Width",
+        "Flags": 2415928329,
+        "Standard": 7
+      },
+      {
+        "Name": "Height",
+        "Flags": 2415928331,
+        "Standard": 8
+      },
+      {
+        "Name": "Visible",
+        "Flags": 2160149508,
+        "Standard": 10
+      },
+      {
+        "Name": "Parent",
+        "Flags": 2147506239,
+        "Standard": 20
+      },
+      {
+        "Name": "Tag",
+        "Flags": 2160140801,
+        "Standard": 25
+      },
+      {
+        "Name": "Shape",
+        "Flags": 29434502,
+        "Standard": -1
+      },
+      {
+        "Name": "DrawMode",
+        "Flags": 12665862,
+        "Standard": -1
+      },
+      {
+        "Name": "BorderStyle",
+        "Flags": 12657798,
+        "Standard": -1
+      },
+      {
+        "Name": "BorderWidth",
+        "Flags": 12657794,
+        "Standard": -1
+      },
+      {
+        "Name": "FillColor",
+        "Flags": 13706373,
+        "Standard": -1
+      },
+      {
+        "Name": "BackStyle",
+        "Flags": 29434502,
+        "Standard": -1
+      },
+      {
+        "Name": "FillStyle",
+        "Flags": 29434502,
+        "Standard": -1
+      }
+    ],
+    "Events": []
+  },
+  "Text": {
+    "Name": "Text",
+    "Properties": [
+      {
+        "Name": "Name",
+        "Flags": 2248201278,
+        "Standard": 0
+      },
+      {
+        "Name": "Index",
+        "Flags": 2227295293,
+        "Standard": 1
+      },
+      {
+        "Name": "BackColor",
+        "Flags": 2161190405,
+        "Standard": 3
+      },
+      {
+        "Name": "ForeColor",
+        "Flags": 2161189893,
+        "Standard": 4
+      },
+      {
+        "Name": "Left",
+        "Flags": 2416059400,
+        "Standard": 5
+      },
+      {
+        "Name": "Top",
+        "Flags": 2415928330,
+        "Standard": 6
+      },
+      {
+        "Name": "Width",
+        "Flags": 2415928329,
+        "Standard": 7
+      },
+      {
+        "Name": "Height",
+        "Flags": 2415928331,
+        "Standard": 8
+      },
+      {
+        "Name": "Enabled",
+        "Flags": 2160149508,
+        "Standard": 9
+      },
+      {
+        "Name": "Visible",
+        "Flags": 2160149508,
+        "Standard": 10
+      },
+      {
+        "Name": "MousePointer",
+        "Flags": 2160141318,
+        "Standard": 11
+      },
+      {
+        "Name": "Text",
+        "Flags": 2160739329,
+        "Standard": 27
+      },
+      {
+        "Name": "FontName",
+        "Flags": 2416067585,
+        "Standard": 13
+      },
+      {
+        "Name": "FontSize",
+        "Flags": 2416985095,
+        "Standard": 18
+      },
+      {
+        "Name": "FontBold",
+        "Flags": 2415936516,
+        "Standard": 14
+      },
+      {
+        "Name": "FontItalic",
+        "Flags": 2415936516,
+        "Standard": 15
+      },
+      {
+        "Name": "FontStrikethru",
+        "Flags": 2415936516,
+        "Standard": 16
+      },
+      {
+        "Name": "FontUnderline",
+        "Flags": 2415936516,
+        "Standard": 17
+      },
+      {
+        "Name": "TabIndex",
+        "Flags": 2214675458,
+        "Standard": 19
+      },
+      {
+        "Name": "BorderStyle",
+        "Flags": 14758918,
+        "Standard": -1
+      },
+      {
+        "Name": "LinkTopic",
+        "Flags": 2160174081,
+        "Standard": 34
+      },
+      {
+        "Name": "LinkItem",
+        "Flags": 2160174081,
+        "Standard": 33
+      },
+      {
+        "Name": "LinkMode",
+        "Flags": 2160174086,
+        "Standard": 32
+      },
+      {
+        "Name": "MultiLine",
+        "Flags": 14758916,
+        "Standard": -1
+      },
+      {
+        "Name": "ScrollBars",
+        "Flags": 14758918,
+        "Standard": -1
+      },
+      {
+        "Name": "SelStart",
+        "Flags": 19459,
+        "Standard": -1
+      },
+      {
+        "Name": "SelLength",
+        "Flags": 19459,
+        "Standard": -1
+      },
+      {
+        "Name": "SelText",
+        "Flags": 19457,
+        "Standard": -1
+      },
+      {
+        "Name": "Parent",
+        "Flags": 2147506239,
+        "Standard": 20
+      },
+      {
+        "Name": "DragMode",
+        "Flags": 2160140806,
+        "Standard": 21
+      },
+      {
+        "Name": "DragIcon",
+        "Flags": 2227282444,
+        "Standard": 22
+      },
+      {
+        "Name": "LinkTimeout",
+        "Flags": 2160140802,
+        "Standard": 35
+      },
+      {
+        "Name": "TabStop",
+        "Flags": 2160149508,
+        "Standard": 24
+      },
+      {
+        "Name": "Tag",
+        "Flags": 2160140801,
+        "Standard": 25
+      },
+      {
+        "Name": "PasswordChar",
+        "Flags": 13181953,
+        "Standard": -1
+      },
+      {
+        "Name": "HideSelection",
+        "Flags": 14758404,
+        "Standard": -1
+      },
+      {
+        "Name": "Alignment",
+        "Flags": 14758918,
+        "Standard": -1
+      },
+      {
+        "Name": "MaxLength",
+        "Flags": 12657667,
+        "Standard": -1
+      },
+      {
+        "Name": "HelpContextID",
+        "Flags": 2160140803,
+        "Standard": 31
+      },
+      {
+        "Name": "hWnd",
+        "Flags": 2147506178,
+        "Standard": 2
+      },
+      {
+        "Name": " ",
+        "Flags": 2697009158,
+        "Standard": 39
+      },
+      {
+        "Name": "DataSource",
+        "Flags": 2194747905,
+        "Standard": 40
+      },
+      {
+        "Name": "DataField",
+        "Flags": 2161190401,
+        "Standard": 41
+      },
+      {
+        "Name": "DataChanged",
+        "Flags": 2148542980,
+        "Standard": 42
+      }
+    ],
+    "Events": [
+      {
+        "Name": "Change",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "DragDrop",
+        "Parameters": 3,
+        "Profile": ""
+      },
+      {
+        "Name": "DragOver",
+        "Parameters": 4,
+        "Profile": ""
+      },
+      {
+        "Name": "GotFocus",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "KeyDown",
+        "Parameters": 2,
+        "Profile": ""
+      },
+      {
+        "Name": "KeyPress",
+        "Parameters": 1,
+        "Profile": ""
+      },
+      {
+        "Name": "KeyUp",
+        "Parameters": 2,
+        "Profile": ""
+      },
+      {
+        "Name": "LinkClose",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "LinkError",
+        "Parameters": 1,
+        "Profile": ""
+      },
+      {
+        "Name": "LinkOpen",
+        "Parameters": 1,
+        "Profile": ""
+      },
+      {
+        "Name": "LostFocus",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "LinkNotify",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "MouseDown",
+        "Parameters": 4,
+        "Profile": ""
+      },
+      {
+        "Name": "MouseMove",
+        "Parameters": 4,
+        "Profile": ""
+      },
+      {
+        "Name": "MouseUp",
+        "Parameters": 4,
+        "Profile": ""
+      },
+      {
+        "Name": "Click",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "DblClick",
+        "Parameters": 0,
+        "Profile": ""
+      }
+    ]
+  },
+  "Timer": {
+    "Name": "Timer",
+    "Properties": [
+      {
+        "Name": "Name",
+        "Flags": 2248201278,
+        "Standard": 0
+      },
+      {
+        "Name": "Index",
+        "Flags": 2227295293,
+        "Standard": 1
+      },
+      {
+        "Name": "Enabled",
+        "Flags": 12658180,
+        "Standard": -1
+      },
+      {
+        "Name": "Interval",
+        "Flags": 12657667,
+        "Standard": -1
+      },
+      {
+        "Name": "Parent",
+        "Flags": 2147506239,
+        "Standard": 20
+      },
+      {
+        "Name": "Tag",
+        "Flags": 2160140801,
+        "Standard": 25
+      },
+      {
+        "Name": " ",
+        "Flags": 1073874947,
+        "Standard": -1
+      },
+      {
+        "Name": "Left",
+        "Flags": 2181116936,
+        "Standard": 36
+      },
+      {
+        "Name": "Top",
+        "Flags": 2181116938,
+        "Standard": 37
+      }
+    ],
+    "Events": [
+      {
+        "Name": "Timer",
+        "Parameters": 0,
+        "Profile": ""
+      }
+    ]
+  },
+  "VScroll": {
+    "Name": "VScroll",
+    "Properties": [
+      {
+        "Name": "Name",
+        "Flags": 2248201278,
+        "Standard": 0
+      },
+      {
+        "Name": "Index",
+        "Flags": 2227295293,
+        "Standard": 1
+      },
+      {
+        "Name": "Left",
+        "Flags": 2416059400,
+        "Standard": 5
+      },
+      {
+        "Name": "Top",
+        "Flags": 2415928330,
+        "Standard": 6
+      },
+      {
+        "Name": "Width",
+        "Flags": 2415928329,
+        "Standard": 7
+      },
+      {
+        "Name": "Height",
+        "Flags": 2415928331,
+        "Standard": 8
+      },
+      {
+        "Name": "Enabled",
+        "Flags": 2160149508,
+        "Standard": 9
+      },
+      {
+        "Name": "Visible",
+        "Flags": 2160149508,
+        "Standard": 10
+      },
+      {
+        "Name": "MousePointer",
+        "Flags": 2160141318,
+        "Standard": 11
+      },
+      {
+        "Name": "TabIndex",
+        "Flags": 2214675458,
+        "Standard": 19
+      },
+      {
+        "Name": "Min",
+        "Flags": 12657666,
+        "Standard": -1
+      },
+      {
+        "Name": "Max",
+        "Flags": 12657666,
+        "Standard": -1
+      },
+      {
+        "Name": "SmallChange",
+        "Flags": 12657666,
+        "Standard": -1
+      },
+      {
+        "Name": "LargeChange",
+        "Flags": 12657666,
+        "Standard": -1
+      },
+      {
+        "Name": "Value",
+        "Flags": 4269058,
+        "Standard": -1
+      },
+      {
+        "Name": "Parent",
+        "Flags": 2147506239,
+        "Standard": 20
+      },
+      {
+        "Name": "DragMode",
+        "Flags": 2160140806,
+        "Standard": 21
+      },
+      {
+        "Name": "DragIcon",
+        "Flags": 2227282444,
+        "Standard": 22
+      },
+      {
+        "Name": "TabStop",
+        "Flags": 2160149508,
+        "Standard": 24
+      },
+      {
+        "Name": "Tag",
+        "Flags": 2160140801,
+        "Standard": 25
+      },
+      {
+        "Name": "hWnd",
+        "Flags": 2147506178,
+        "Standard": 2
+      },
+      {
+        "Name": "HelpContextID",
+        "Flags": 2160140803,
+        "Standard": 31
+      }
+    ],
+    "Events": [
+      {
+        "Name": "Change",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "DragDrop",
+        "Parameters": 3,
+        "Profile": ""
+      },
+      {
+        "Name": "DragOver",
+        "Parameters": 4,
+        "Profile": ""
+      },
+      {
+        "Name": "GotFocus",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "KeyDown",
+        "Parameters": 2,
+        "Profile": ""
+      },
+      {
+        "Name": "KeyPress",
+        "Parameters": 1,
+        "Profile": ""
+      },
+      {
+        "Name": "KeyUp",
+        "Parameters": 2,
+        "Profile": ""
+      },
+      {
+        "Name": "LostFocus",
+        "Parameters": 0,
+        "Profile": ""
+      },
+      {
+        "Name": "Scroll",
+        "Parameters": 0,
+        "Profile": ""
+      }
+    ]
+  },
+  "App": {
+    "Name": "App",
+    "Properties": [
+      {
+        "Name": "Name",
+        "Flags": 2248201278,
+        "Standard": 0
+      },
+      {
+        "Name": "HelpFile",
+        "Flags": 12665857,
+        "Standard": -1
+      },
+      {
+        "Name": "Path",
+        "Flags": 20481,
+        "Standard": -1
+      },
+      {
+        "Name": "EXEName",
+        "Flags": 20481,
+        "Standard": -1
+      },
+      {
+        "Name": "Title",
+        "Flags": 17409,
+        "Standard": -1
+      },
+      {
+        "Name": "PrevInstance",
+        "Flags": 20484,
+        "Standard": -1
+      }
+    ],
+    "Events": []
+  },
+  "Clipboard": {
+    "Name": "Clipboard",
+    "Properties": [
+      {
+        "Name": "Name",
+        "Flags": 2248201278,
+        "Standard": 0
+      },
+      {
+        "Name": "Index",
+        "Flags": 2227295293,
+        "Standard": 1
+      }
+    ],
+    "Events": []
+  },
+  "Printer": {
+    "Name": "Printer",
+    "Properties": [
+      {
+        "Name": "Name",
+        "Flags": 2248201278,
+        "Standard": 0
+      },
+      {
+        "Name": "Index",
+        "Flags": 2227295293,
+        "Standard": 1
+      },
+      {
+        "Name": "ForeColor",
+        "Flags": 2161189893,
+        "Standard": 4
+      },
+      {
+        "Name": "Width",
+        "Flags": 22531,
+        "Standard": -1
+      },
+      {
+        "Name": "Height",
+        "Flags": 22531,
+        "Standard": -1
+      },
+      {
+        "Name": "FontName",
+        "Flags": 2416067585,
+        "Standard": 13
+      },
+      {
+        "Name": "FontSize",
+        "Flags": 2416985095,
+        "Standard": 18
+      },
+      {
+        "Name": "FontBold",
+        "Flags": 2415936516,
+        "Standard": 14
+      },
+      {
+        "Name": "FontItalic",
+        "Flags": 2415936516,
+        "Standard": 15
+      },
+      {
+        "Name": "FontStrikethru",
+        "Flags": 2415936516,
+        "Standard": 16
+      },
+      {
+        "Name": "FontUnderline",
+        "Flags": 2415936516,
+        "Standard": 17
+      },
+      {
+        "Name": "hDC",
+        "Flags": 22530,
+        "Standard": -1
+      },
+      {
+        "Name": "CurrentX",
+        "Flags": 19463,
+        "Standard": -1
+      },
+      {
+        "Name": "CurrentY",
+        "Flags": 19463,
+        "Standard": -1
+      },
+      {
+        "Name": "ScaleLeft",
+        "Flags": 272647175,
+        "Standard": -1
+      },
+      {
+        "Name": "ScaleTop",
+        "Flags": 272647175,
+        "Standard": -1
+      },
+      {
+        "Name": "ScaleWidth",
+        "Flags": 268452871,
+        "Standard": -1
+      },
+      {
+        "Name": "ScaleHeight",
+        "Flags": 268452871,
+        "Standard": -1
+      },
+      {
+        "Name": "ScaleMode",
+        "Flags": 17414,
+        "Standard": -1
+      },
+      {
+        "Name": "FontTransparent",
+        "Flags": 272647172,
+        "Standard": -1
+      },
+      {
+        "Name": "DrawStyle",
+        "Flags": 12665862,
+        "Standard": -1
+      },
+      {
+        "Name": "DrawWidth",
+        "Flags": 12665858,
+        "Standard": -1
+      },
+      {
+        "Name": "FillStyle",
+        "Flags": 12665862,
+        "Standard": -1
+      },
+      {
+        "Name": "FillColor",
+        "Flags": 13706245,
+        "Standard": -1
+      },
+      {
+        "Name": "DrawMode",
+        "Flags": 12665862,
+        "Standard": -1
+      },
+      {
+        "Name": "Page",
+        "Flags": 22530,
+        "Standard": -1
+      },
+      {
+        "Name": "FontCount",
+        "Flags": 20482,
+        "Standard": -1
+      },
+      {
+        "Name": "Fonts",
+        "Flags": 20737,
+        "Standard": -1
+      },
+      {
+        "Name": "TwipsPerPixelX",
+        "Flags": 22535,
+        "Standard": -1
+      },
+      {
+        "Name": "TwipsPerPixelY",
+        "Flags": 22535,
+        "Standard": -1
+      }
+    ],
+    "Events": []
+  },
+  "Screen": {
+    "Name": "Screen",
+    "Properties": [
+      {
+        "Name": "Name",
+        "Flags": 2248201278,
+        "Standard": 0
+      },
+      {
+        "Name": "Index",
+        "Flags": 2227295293,
+        "Standard": 1
+      },
+      {
+        "Name": "Width",
+        "Flags": 20489,
+        "Standard": -1
+      },
+      {
+        "Name": "Height",
+        "Flags": 20491,
+        "Standard": -1
+      },
+      {
+        "Name": "FontCount",
+        "Flags": 20482,
+        "Standard": -1
+      },
+      {
+        "Name": "Fonts",
+        "Flags": 20737,
+        "Standard": -1
+      },
+      {
+        "Name": "ActiveForm",
+        "Flags": 20543,
+        "Standard": -1
+      },
+      {
+        "Name": "ActiveControl",
+        "Flags": 20544,
+        "Standard": -1
+      },
+      {
+        "Name": "MousePointer",
+        "Flags": 2160141318,
+        "Standard": 11
+      },
+      {
+        "Name": "TwipsPerPixelX",
+        "Flags": 22535,
+        "Standard": -1
+      },
+      {
+        "Name": "TwipsPerPixelY",
+        "Flags": 22535,
+        "Standard": -1
+      }
+    ],
+    "Events": []
+  }
+}

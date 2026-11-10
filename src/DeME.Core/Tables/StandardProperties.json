@@ -1,0 +1,217 @@
+[
+  {
+    "Name": "Name",
+    "Flags": 2248201278,
+    "Standard": 0
+  },
+  {
+    "Name": "Index",
+    "Flags": 2227295293,
+    "Standard": 1
+  },
+  {
+    "Name": "hWnd",
+    "Flags": 2147506178,
+    "Standard": 2
+  },
+  {
+    "Name": "BackColor",
+    "Flags": 2161190405,
+    "Standard": 3
+  },
+  {
+    "Name": "ForeColor",
+    "Flags": 2161189893,
+    "Standard": 4
+  },
+  {
+    "Name": "Left",
+    "Flags": 2416059400,
+    "Standard": 5
+  },
+  {
+    "Name": "Top",
+    "Flags": 2415928330,
+    "Standard": 6
+  },
+  {
+    "Name": "Width",
+    "Flags": 2415928329,
+    "Standard": 7
+  },
+  {
+    "Name": "Height",
+    "Flags": 2415928331,
+    "Standard": 8
+  },
+  {
+    "Name": "Enabled",
+    "Flags": 2160149508,
+    "Standard": 9
+  },
+  {
+    "Name": "Visible",
+    "Flags": 2160149508,
+    "Standard": 10
+  },
+  {
+    "Name": "MousePointer",
+    "Flags": 2160141318,
+    "Standard": 11
+  },
+  {
+    "Name": "Caption",
+    "Flags": 2160739329,
+    "Standard": 12
+  },
+  {
+    "Name": "FontName",
+    "Flags": 2416067585,
+    "Standard": 13
+  },
+  {
+    "Name": "FontBold",
+    "Flags": 2415936516,
+    "Standard": 14
+  },
+  {
+    "Name": "FontItalic",
+    "Flags": 2415936516,
+    "Standard": 15
+  },
+  {
+    "Name": "FontStrikethru",
+    "Flags": 2415936516,
+    "Standard": 16
+  },
+  {
+    "Name": "FontUnderline",
+    "Flags": 2415936516,
+    "Standard": 17
+  },
+  {
+    "Name": "FontSize",
+    "Flags": 2416985095,
+    "Standard": 18
+  },
+  {
+    "Name": "TabIndex",
+    "Flags": 2214675458,
+    "Standard": 19
+  },
+  {
+    "Name": "Parent",
+    "Flags": 2147506239,
+    "Standard": 20
+  },
+  {
+    "Name": "DragMode",
+    "Flags": 2160140806,
+    "Standard": 21
+  },
+  {
+    "Name": "DragIcon",
+    "Flags": 2227282444,
+    "Standard": 22
+  },
+  {
+    "Name": "BorderStyle",
+    "Flags": 2160149510,
+    "Standard": 23
+  },
+  {
+    "Name": "TabStop",
+    "Flags": 2160149508,
+    "Standard": 24
+  },
+  {
+    "Name": "Tag",
+    "Flags": 2160140801,
+    "Standard": 25
+  },
+  {
+    "Name": "Name",
+    "Flags": 2248201278,
+    "Standard": 26
+  },
+  {
+    "Name": "Text",
+    "Flags": 2160739329,
+    "Standard": 27
+  },
+  {
+    "Name": "BorderStyle",
+    "Flags": 2160149510,
+    "Standard": 28
+  },
+  {
+    "Name": "ClipControls",
+    "Flags": 2162242052,
+    "Standard": 29
+  },
+  {
+    "Name": " ",
+    "Flags": 1073743876,
+    "Standard": 30
+  },
+  {
+    "Name": "HelpContextID",
+    "Flags": 2160140803,
+    "Standard": 31
+  },
+  {
+    "Name": "LinkMode",
+    "Flags": 2160174086,
+    "Standard": 32
+  },
+  {
+    "Name": "LinkItem",
+    "Flags": 2160174081,
+    "Standard": 33
+  },
+  {
+    "Name": "LinkTopic",
+    "Flags": 2160174081,
+    "Standard": 34
+  },
+  {
+    "Name": "LinkTimeout",
+    "Flags": 2160140802,
+    "Standard": 35
+  },
+  {
+    "Name": "Left",
+    "Flags": 2181116936,
+    "Standard": 36
+  },
+  {
+    "Name": "Top",
+    "Flags": 2181116938,
+    "Standard": 37
+  },
+  {
+    "Name": "Align",
+    "Flags": 2160141318,
+    "Standard": 38
+  },
+  {
+    "Name": " ",
+    "Flags": 2697009158,
+    "Standard": 39
+  },
+  {
+    "Name": "DataSource",
+    "Flags": 2194747905,
+    "Standard": 40
+  },
+  {
+    "Name": "DataField",
+    "Flags": 2161190401,
+    "Standard": 41
+  },
+  {
+    "Name": "DataChanged",
+    "Flags": 2148542980,
+    "Standard": 42
+  }
+]

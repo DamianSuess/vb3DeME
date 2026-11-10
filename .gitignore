@@ -89,3 +89,9 @@ TestResult.xml
 /[Dd]ocs/*.csv
 /[Dd]ocs/backup
 /[Tt]ools
+
+# Local tooling and generated artifacts
+/upstream/
+/.toolchain/
+/artifacts/
+

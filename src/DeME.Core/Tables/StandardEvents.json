@@ -1,0 +1,87 @@
+[
+  {
+    "Name": "Click",
+    "Parameters": 0,
+    "Profile": ""
+  },
+  {
+    "Name": "DblClick",
+    "Parameters": 0,
+    "Profile": ""
+  },
+  {
+    "Name": "DragDrop",
+    "Parameters": 3,
+    "Profile": ""
+  },
+  {
+    "Name": "DragOver",
+    "Parameters": 4,
+    "Profile": ""
+  },
+  {
+    "Name": "GotFocus",
+    "Parameters": 0,
+    "Profile": ""
+  },
+  {
+    "Name": "KeyDown",
+    "Parameters": 2,
+    "Profile": ""
+  },
+  {
+    "Name": "KeyPress",
+    "Parameters": 1,
+    "Profile": ""
+  },
+  {
+    "Name": "KeyUp",
+    "Parameters": 2,
+    "Profile": ""
+  },
+  {
+    "Name": "LostFocus",
+    "Parameters": 0,
+    "Profile": ""
+  },
+  {
+    "Name": "MouseDown",
+    "Parameters": 4,
+    "Profile": ""
+  },
+  {
+    "Name": "MouseMove",
+    "Parameters": 4,
+    "Profile": ""
+  },
+  {
+    "Name": "MouseUp",
+    "Parameters": 4,
+    "Profile": ""
+  },
+  {
+    "Name": "LinkError",
+    "Parameters": 1,
+    "Profile": ""
+  },
+  {
+    "Name": "LinkOpen",
+    "Parameters": 1,
+    "Profile": ""
+  },
+  {
+    "Name": "LinkClose",
+    "Parameters": 0,
+    "Profile": ""
+  },
+  {
+    "Name": "LinkNotify",
+    "Parameters": 0,
+    "Profile": ""
+  },
+  {
+    "Name": "Change",
+    "Parameters": 0,
+    "Profile": ""
+  }
+]
