@@ -1,3 +1,6 @@
+// Copyright Xeno Innovations, Inc. 2026
+// See the LICENSE file in the project root for more information.
+
 using System.Text;
 
 namespace DeME.Core;
@@ -16,6 +19,7 @@ public sealed class BasicDecompiler
   private readonly Dictionary<int, string> _labels = new();
   private readonly Stack<bool> _selectCases = new();
   private readonly List<string> _inputVariables = new();
+
   private int _indent = 1;
   private string? _condition;
   private string? _printTarget;
@@ -52,15 +56,18 @@ public sealed class BasicDecompiler
     if (!_procedure.IsLocal)
     {
       Warnings.Add($"{_procedure.Name}: external parameter types and passing conventions have not been inferred; declaration is a placeholder.");
+
       string parameters = string.Join(", ", Enumerable.Range(1, _procedure.ScopeFlags >> 9).Select(i => $"p{i} As Any"));
       string library = _procedure.Library.Length == 0 ? "UNKNOWN" : _procedure.Library;
       string alias = _procedure.Alias.Length == 0 ? string.Empty : " Alias " + VbText.Quote(_procedure.Alias);
+
       return $"' DeME: external declaration requires parameter verification.\nDeclare {(_procedure.IsFunction ? "Function" : "Sub")} {_procedure.Name} Lib {VbText.Quote(library)}{alias} ({parameters}){(_procedure.IsFunction ? " As " + _procedure.ReturnType : string.Empty)}\n";
     }
 
     try
     {
       IReadOnlyList<PcodeInstruction> instructions = PcodeReader.Read(_procedure.Bytecode);
+
       foreach (PcodeInstruction instruction in instructions)
       {
         string keyword = instruction.Opcode.Keyword.Trim();
@@ -135,6 +142,7 @@ public sealed class BasicDecompiler
     if ((opcode.Case is 4 or 5) || (keyword is "nl" or "eos"))
     {
       Flush();
+
       if (_condition is not null)
       {
         Line($"If {_condition} Then");
@@ -726,10 +734,12 @@ public sealed class BasicDecompiler
       result.AppendLine("' DeME: PARTIAL RECOVERY. This procedure needs manual reconstruction.");
 
     string kind = _procedure.IsFunction ? "Function" : "Sub";
+
     IEnumerable<string> parameters = _procedure.IsEvent
       ? _procedure.EventParameters.Select(item => $"{item.Name} As {item.Type}")
       : _parameters.OrderByDescending(item => item.Key + 2 <= _module.Data.Length ? (int)(short)_module.Data.Word(item.Key) : item.Key).Select(item => item.Value);
     int expected = _procedure.ScopeFlags >> 9;
+
     if (!_procedure.IsEvent && (expected > 0))
       Warnings.Add($"{_procedure.Name}: parameter passing conventions require manual verification.");
 

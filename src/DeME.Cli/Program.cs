@@ -1,3 +1,6 @@
+// Copyright Xeno Innovations, Inc. 2026
+// See the LICENSE file in the project root for more information.
+
 using System.Text.Json;
 using DeME.Core;
 
@@ -5,6 +8,22 @@ namespace DeME.Cli;
 
 internal static class Program
 {
+  private static void Help()
+  {
+    Console.WriteLine("DeME - Visual Basic 3 reverse engineering (100% managed C# 10)");
+    Console.WriteLine("  deme inspect <program.exe> [--json]");
+    Console.WriteLine("  deme decompile <program.exe> [options]");
+    Console.WriteLine("  --out, -o <directory>  New output directory (default: <name>_decompiled)");
+    Console.WriteLine("  --no-forms            Omit .FRM/.FRX output");
+    Console.WriteLine("  --no-code             Omit source and P-code output");
+    Console.WriteLine("  --no-assets           Omit standalone media extraction");
+    Console.WriteLine("  --raw                 Export original NE resource payloads");
+    Console.WriteLine("  --utf8                Write modern UTF-8 text; default is VB3 Windows-1252");
+    Console.WriteLine("  --copy-dependencies   Copy companion DLL/VBX files from the input directory");
+    Console.WriteLine("  --strict              Exit 3 on recovery warnings (outputs are retained)");
+    Console.WriteLine("  --help | --version");
+  }
+
   private static int Main(string[] args)
   {
     if ((args.Length == 0) || args.Contains("--help") || args.Contains("-h"))
@@ -41,6 +60,7 @@ internal static class Program
           Console.WriteLine($"16-bit NE: {Path.GetFullPath(args[1])}");
           Console.WriteLine($"VB3: {executable.IsVisualBasic3}; {executable.Segments.Count} segments; {executable.Resources.Count} resources");
           Console.WriteLine("Imports: " + string.Join(", ", executable.Imports));
+
           if (project is not null)
             Console.WriteLine($"Project: {project.Title}; {project.Forms.Count} forms; names stripped: {project.NamesStripped}");
         }
@@ -66,27 +86,35 @@ internal static class Program
 
             output = args[i];
             break;
+
           case "--no-forms":
             options = options with { Forms = false };
             break;
+
           case "--no-code":
             options = options with { Code = false };
             break;
+
           case "--no-assets":
             options = options with { Assets = false };
             break;
+
           case "--raw":
             options = options with { RawResources = true };
             break;
+
           case "--utf8":
             options = options with { Utf8 = true };
             break;
+
           case "--copy-dependencies":
             options = options with { CopyDependencies = true };
             break;
+
           case "--strict":
             strict = true;
             break;
+
           default:
             throw new ArgumentException($"Unknown option: {args[i]}");
         }
@@ -118,21 +146,5 @@ internal static class Program
       Console.Error.WriteLine("Error: " + error.Message);
       return 1;
     }
-  }
-
-  private static void Help()
-  {
-    Console.WriteLine("DeME - Visual Basic 3 reverse engineering (100% managed C# 10)");
-    Console.WriteLine("  deme inspect <program.exe> [--json]");
-    Console.WriteLine("  deme decompile <program.exe> [options]");
-    Console.WriteLine("  --out, -o <directory>  New output directory (default: <name>_decompiled)");
-    Console.WriteLine("  --no-forms            Omit .FRM/.FRX output");
-    Console.WriteLine("  --no-code             Omit source and P-code output");
-    Console.WriteLine("  --no-assets           Omit standalone media extraction");
-    Console.WriteLine("  --raw                 Export original NE resource payloads");
-    Console.WriteLine("  --utf8                Write modern UTF-8 text; default is VB3 Windows-1252");
-    Console.WriteLine("  --copy-dependencies   Copy companion DLL/VBX files from the input directory");
-    Console.WriteLine("  --strict              Exit 3 on recovery warnings (outputs are retained)");
-    Console.WriteLine("  --help | --version");
   }
 }

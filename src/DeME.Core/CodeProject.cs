@@ -1,3 +1,6 @@
+// Copyright Xeno Innovations, Inc. 2026
+// See the LICENSE file in the project root for more information.
+
 namespace DeME.Core;
 
 public sealed class CodeProject
@@ -18,11 +21,14 @@ public sealed class CodeProject
     NeResource resource = executable.FindResource(10, 2) ?? throw new InvalidDataException("VB3 code directory (RT_RCDATA 2) is missing.");
     var data = new BinaryData(executable.ReadResource(resource));
     data.Span(0, 0x60);
+
     NeSegment segment = executable.Segments.FirstOrDefault(item => item.HasRelocations && (item.Index != executable.EntrySegment))
       ?? executable.Segments.ElementAtOrDefault(2) ?? throw new InvalidDataException("VB3 descriptor segment is missing.");
+
     NeSegment[] descriptorSegments = executable.Segments.Skip(segment.Index - 1).TakeWhile(item => item.HasRelocations).ToArray();
     BinaryData[] descriptorData = descriptorSegments.Select(item => new BinaryData(executable.ReadSegment(item))).ToArray();
     var targets = new Dictionary<int, int>();
+
     for (int bank = 0; bank < descriptorSegments.Length; bank++)
     {
       foreach (var relocation in ReadRelocations(executable, descriptorSegments[bank], descriptorData[bank]))
@@ -42,6 +48,7 @@ public sealed class CodeProject
       BinaryData descriptors = DescriptorData(pointer, descriptorData);
       descriptors.Span(offset, 64);
       ushort next = descriptors.Word(offset + 30);
+
       if ((pointer != modulePointer) || (descriptors.Word(offset + 26) != 0))
       {
         FormReference? form = project.Forms.FirstOrDefault(item => item.ModuleId == pointer);
@@ -64,6 +71,7 @@ public sealed class CodeProject
       descriptors.Span(offset, 48);
       ushort flags = descriptors.Word(offset + 12);
       bool local = (descriptors.Word(offset + 22) & 1) != 0;
+
       var procedure = new VbProcedure
       {
         Pointer = pointer,
@@ -160,6 +168,7 @@ public sealed class CodeProject
     int start = segment.Offset + segment.Length;
     int count = data.Word(start);
     data.Span(start + 2, count * 8);
+
     for (int i = 0; i < count; i++)
     {
       int position = start + 2 + (i * 8);
@@ -284,6 +293,7 @@ public sealed class CodeProject
       var moduleData = new BinaryData(data.Bytes(position, length));
       position += length;
       VbModule? module = Modules.FirstOrDefault(item => item.Id == id);
+
       if (module is not null)
       {
         module.Data = moduleData;

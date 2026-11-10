@@ -1,3 +1,6 @@
+// Copyright Xeno Innovations, Inc. 2026
+// See the LICENSE file in the project root for more information.
+
 namespace DeME.Core;
 
 /// <summary>Reads Windows 16-bit NE containers without loading or executing them.</summary>
