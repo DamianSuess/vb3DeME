@@ -3,6 +3,11 @@
     <OutputType>Exe</OutputType>
     <AssemblyName>deme</AssemblyName>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <OutputPath>$(MSBuildThisFileDirectory)../../publish/</OutputPath>
+    <PublishDir>$(MSBuildThisFileDirectory)../../publish/</PublishDir>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+  </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="../DeME.Core/DeME.Core.csproj" />
     <None Include="../../third_party/vb3dec.LICENSE" Link="licenses/vb3dec.LICENSE" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />

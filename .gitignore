@@ -94,4 +94,5 @@ TestResult.xml
 /upstream/
 /.toolchain/
 /artifacts/
+/publish/
 

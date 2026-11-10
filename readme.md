@@ -4,6 +4,8 @@ DeME is a command-line application written entirely in **C# 10**. The core parse
 
 ## Build and run
 
+Run `build.bat` or `build.ps1` to build the solution in Release mode. Release CLI builds place `deme.exe`, its dependencies, and license notices directly in the repository's root `publish/` folder. This also applies to `dotnet build DeME.sln -c Release`. Run `./publish/deme.exe --help` after building. Library and test project build outputs remain in their project `bin` folders.
+
 Install the .NET 10 SDK, then run from this directory:
 
 ```powershell
