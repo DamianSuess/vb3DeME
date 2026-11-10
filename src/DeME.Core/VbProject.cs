@@ -47,7 +47,9 @@ public sealed record VbProject
     {
       data.Span(position, 11);
       byte type = data.Byte(position);
-      int nameLength = data.Byte(position + 1);
+
+      // Control-type records store a type ID here, not a name length.
+      int nameLength = type == 0x58 ? 0 : data.Byte(position + 1);
       ushort id = (ushort)(data.Word(position + 2) & 0x7fff);
       ushort tag = data.Word(position + 4);
       ushort module = data.Word(position + 9);

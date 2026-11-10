@@ -20,6 +20,7 @@ internal static class Program
       ("Reject truncated input at every byte boundary", RejectTruncation),
       ("Reject invalid signatures, offsets and alignments", RejectInvalidNe),
       ("Recover project, form names and control names", ReadProject),
+      ("Read control-type records without interpreting type IDs as name lengths", ReadControlTypes),
       ("Decode CommandButton using runtime property layout", DecodeButton),
       ("Preserve controls with truncated properties and warnings", TruncatedProperty),
       ("Reject broken control framing", RejectControl),
@@ -107,6 +108,31 @@ internal static class Program
     Assert((project.Title == "Fixture") && (project.Forms.Count == 1));
     Assert(project.Forms[0].Name == "Main");
     Assert(project.Forms[0].ControlNames[1] == "Command1");
+  }
+
+  private static void ReadControlTypes()
+  {
+    byte[] bytes = Fixture.Executable();
+    int position = 3072 + 19 + 11 + "MAIN.FRM".Length + 2;
+    foreach (byte type in new byte[] { 0, 1, 7, 13, 0xff })
+    {
+      bytes[position] = 0x58;
+      bytes[position + 1] = type;
+      Fixture.Word(bytes, position + 11, 0);
+      position += 13;
+    }
+
+    // A following form proves that each control-type record preserves alignment.
+    byte[] form = bytes.AsSpan(3072 + 19, 11 + "MAIN.FRM".Length + 2).ToArray();
+    form.CopyTo(bytes, position);
+    VbProject project = VbProject.Read(NeExecutable.Parse(bytes));
+    Assert(project.Forms.Count == 2);
+    Assert(project.Forms.All(item => item.FileName == "MAIN.FRM"));
+    Assert(project.CustomControls.Count == 0);
+
+    // Control-type records still have a bounds-checked sub-item array.
+    Fixture.Word(bytes, position - 2, 0x7fff);
+    Throws<InvalidDataException>(() => VbProject.Read(NeExecutable.Parse(bytes)));
   }
 
   private static FormReference Reference() => new(1, 4, "MAIN.FRM", "Main", 0x48, 0x40, new Dictionary<int, string>());

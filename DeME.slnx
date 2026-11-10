@@ -1,0 +1,14 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Folder Name="/src/">
+    <Project Path="src/DeME.Cli/DeME.Cli.csproj" />
+    <Project Path="src/DeME.Core/DeME.Core.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/DeME.Tests/DeME.Tests.csproj" />
+  </Folder>
+</Solution>
