@@ -42,6 +42,8 @@ internal static class Program
       ("Reconstruct FRX pictures and standalone media", PictureAssets),
       ("Preserve failed form and code recovery with diagnostics", FailedRecovery),
       ("Report missing custom controls", MissingCustomControls),
+      ("Resolve global variable addressing and declarations", GlobalVariables),
+      ("Read custom VBX models without loading native code", CustomControlModels),
     };
     int failed = 0;
     foreach (var test in tests)
@@ -298,7 +300,7 @@ internal static class Program
 
   private static void ControlFlow()
   {
-    byte[] bytecode = Fixture.Bytecode(("True", Array.Empty<ushort>()), ("If ", new ushort[] { 0 }), ("nl", Array.Empty<ushort>()), ("Beep", Array.Empty<ushort>()), ("nl", Array.Empty<ushort>()), ("Else", new ushort[] { 0 }), ("DoEvents", Array.Empty<ushort>()), ("End If", Array.Empty<ushort>()), ("c%", new ushort[] { 3 }), ("Select Case", new ushort[] { 0 }), ("c%", new ushort[] { 3 }), ("Case ", Array.Empty<ushort>()), ("Beep", Array.Empty<ushort>()), ("Case Else", Array.Empty<ushort>()), ("DoEvents", Array.Empty<ushort>()), ("End Select", new ushort[] { 0 }), ("eos", Array.Empty<ushort>()));
+    byte[] bytecode = Fixture.Bytecode(("True", Array.Empty<ushort>()), ("If ", new ushort[] { 0 }), ("nl", Array.Empty<ushort>()), ("Beep", Array.Empty<ushort>()), ("nl", Array.Empty<ushort>()), ("Else", new ushort[] { 0 }), ("DoEvents", Array.Empty<ushort>()), ("End If", Array.Empty<ushort>()), ("c%", new ushort[] { 3 }), ("Select Case", new ushort[] { 0 }), ("c%", new ushort[] { 3 }), ("Case ", Array.Empty<ushort>()), ("Beep", Array.Empty<ushort>()), ("Case Else", Array.Empty<ushort>()), ("DoEvents", Array.Empty<ushort>()), ("End Select", Array.Empty<ushort>()), ("eos", Array.Empty<ushort>()));
     string source = DecompileBytecode(bytecode);
     Assert(source.Contains("If True Then", StringComparison.Ordinal));
     Assert(source.Contains("Select Case 3", StringComparison.Ordinal));
@@ -355,6 +357,51 @@ internal static class Program
     File.WriteAllBytes(input, executable);
     DecompileReport report = Decompiler.Decompile(input, output);
     Assert(report.Warnings.Any(warning => warning.Contains("TEST.VBX is missing", StringComparison.Ordinal)));
+  });
+
+  private static void GlobalVariables() => WithDirectory((_, input, output) =>
+  {
+    byte[] bytecode = Fixture.Bytecode(("c%", new ushort[] { 42 }), ("var=", new ushort[] { 0x40 }), ("eos", Array.Empty<ushort>()));
+    Fixture.Word(bytecode, 4, 11602);
+    byte[] executable = Fixture.Executable(bytecode: bytecode);
+    Fixture.Word(executable, 3328 + 0x6e + 0x40, 0x24);
+    File.WriteAllBytes(input, executable);
+    Decompiler.Decompile(input, output);
+    Assert(File.ReadAllText(Path.Combine(output, "Globals.bas")).Contains("Global gv0024 As Integer", StringComparison.Ordinal));
+    Assert(File.ReadAllText(Path.Combine(output, "MAIN.FRM")).Contains("gv0024 = 42", StringComparison.Ordinal));
+    Assert(File.ReadAllText(Path.Combine(output, "fixture.MAK")).Contains("Globals.bas", StringComparison.Ordinal));
+  });
+
+  private static void CustomControlModels() => WithDirectory((root, input, output) =>
+  {
+    byte[] library = Fixture.Executable();
+    Fixture.Word(library, 200, 160);
+    Fixture.Word(library, 202, 256);
+    Fixture.Word(library, 2560 + 32, 0x300);
+    Fixture.Word(library, 2560 + 32 + 0x14, 128);
+    Fixture.Word(library, 2560 + 32 + 0x16, 144);
+    Fixture.Word(library, 2560 + 32 + 0x1a, 96);
+    Encoding.ASCII.GetBytes("Widget").CopyTo(library, 2560 + 128);
+    Encoding.ASCII.GetBytes("Widget").CopyTo(library, 2560 + 144);
+    Fixture.Word(library, 2560 + 96, 160);
+    Fixture.Word(library, 2560 + 160, 176);
+    Fixture.DWord(library, 2560 + 162, 2);
+    Encoding.ASCII.GetBytes("Value").CopyTo(library, 2560 + 176);
+    File.WriteAllBytes(Path.Combine(root, "TEST.VBX"), library);
+    byte[] executable = Fixture.Executable();
+    int position = 3072 + 19 + 11 + "MAIN.FRM".Length + 2;
+    executable[position] = 0x43;
+    executable[position + 1] = 8;
+    Encoding.ASCII.GetBytes("TEST.VBX").CopyTo(executable, position + 11);
+    byte[] control = Fixture.Record(1, 1, 0xff, 6, 87, 105, 100, 103, 101, 116, 0xff, 0, 123, 0, 0xff, 0);
+    Array.Clear(executable, 3584, 256);
+    Fixture.Form(control, new byte[] { 2 }).CopyTo(executable, 3584);
+    File.WriteAllBytes(input, executable);
+    DecompileReport report = Decompiler.Decompile(input, output, new DecompileOptions { Code = false });
+    Assert(report.Warnings.Count == 0, string.Join("; ", report.Warnings));
+    string text = File.ReadAllText(Path.Combine(output, "MAIN.FRM"));
+    Assert(text.Contains("Begin Widget Command1", StringComparison.Ordinal));
+    Assert(text.Contains("= 123", StringComparison.Ordinal));
   });
 
   private static void Assert(bool condition, string? message = null)
